@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+} 
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;  
+}
+
+/* Create an active/current "tab button" class */    
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+  </div>
+
+
+  <div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Gorgeous India\Gorgeous India-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Gorgeous India\Gorgeous India-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Gorgeous India\Gorgeous India-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Gorgeous India\Gorgeous India-4.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");             
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">    
+  <h3>Itinerary</h3>
+  <p><b> Day 1: Arrive Mumbai</b></p>
+
+Our representative will meet you at the airport and assist with your transfer to your hotel. Mumbai is the financial and commercial capital of the country and is known as the New York of India. The city also is the host to the Indian Film Industry - popularly known as “Bollywood”. This cosmopolitan city attracts people who come here from all parts of the country to fulfill their hopes and dreams. Have an overnight stay at the hotel. (D)
+
+
+
+
+
+<p><b>Day 2: Mumbai - City Sightseeing</b></p>
+
+Enjoy an early morning excursion to the Elephanta caves on a nearby island. Your afternoon tour of the city includes the Gateway of India, the monument commemorating the 1911 visit to King George V and Queen Mary to Bombay. See the Mani Bhawan, the old mumbai residency of Mahatma Gandhi, a two - storied building that houses a 2000 - book reference library of his life. You also drive past the Chhatrapati Shivaji Terminus,a brilliant specimen of Victorian Gothic architecture. Once called the Victoria terminus, the station is one of the busiest railway stations in India. (B, D)
+
+
+
+
+
+
+
+
+
+<p><b>Day 3: Mumbai - Udaipur (By Flight)</b></p>
+
+Morning transfer to the airport for the flight to Udaipur, popularly known as the city of lakes and sunrise, it is a beautiful city surrounded by hills and mountains. One can witness a great combination of nature and the historical past if they visit Udaipur. Spend the rest of the day at your leisure. Overnight stay at the hotel. (B, D)
+
+ 
+
+
+
+
+
+
+
+
+<p><b>Day 4: Udaipur - City Sightseeing</b></p>
+
+Have a delicious breakfast at the hotel, then enjoy a tour of the Udaipur City. We start with the City Palace, then we proceed to beautiful garden of Saheliyon ki Bari and the Jagdish temple. Enjoy the evening with the cruise on the placid waters of Lake Pichola. Overnight at the hotel. (B, D)
+
+
+
+
+
+
+
+
+
+<p><b>Day 5: Udaipur - Jaipur (425 Kms / 7 Hours)</b></p>
+
+In the morning, have breakfast and drive to Jaipur, the vibrant capital of Rajasthan, popularly known as the Pink City. Here the ancient and the modern thrive side by side. Printers and potters, artists and antique dealers present a fascinating picture of a city that balances tradition and change.Check in the Hotel, rest of the day at your leisure. (B, D)
+
+
+
+<p><b>Day 6: Jaipur - City Sightseeing</b></p> 
+
+Breakfast at the Hotel. After breakfast, proceed for an excursion to Amer Fort, which is located 12 kms outside Jaipur. The original Palace was built by Raja Mansingh and later additions were made by Sawai Jai Singh. One of the finest example of Rajput architecture, it was the ancient capital of Kaisshawah rulers. Enjoy the ascent to the Palace on the back of a brightly caparisoned elephant. Visit the multiple chambers and hallways of the palace which are famous for their design and decorations. This unique capital of the erstwhile warrior kings of Rajasthan is a must on every tourist itinerary to the state. Afternoon, proceed for a city tour to visit the unique Jantar Mantar, which is a magnificent stone observatory built by Raja Jai Singh in 1728 and drive past the Hawa Mahal, an intriguing “ Palace of Winds”. This was really a facade built in 1799, to allow royal ladies to view the city from the windows. Later visit the opulent City Palace, the former royal residence built in a blend of Rajasthani and Mughal style which has grand museums displaying an excellent collection of miniature paintings, costumes and armory. Overnight at the Hotel. (B, D)
+
+
+
+
+
+<p><b>Day 7: Jaipur - Agra (250 Kms / 5 Hours)</b></p>
+
+In the morning, have breakfast at the hotel, then drive to Agra. Enroute visit the city of Fatehpur Sikri, abandoned due to lack of water supply. In Agra, you will witness the world renowned as the monument of love “TAJ MAHAL”. The Mughal emperor Shah Jehan, constructed this monument in the memory of his beloved wife Mumtaz Mahal. Overnight at the Hotel. (B, D)
+
+
+
+
+
+
+
+<p><b>Day 8: Agra - City Sightseeing</b></p>
+
+In the morning, have breakfast at the hotel, then we proceed to the full day tour of this majestic city. We start the tour by visiting the world famous TAJ MAHAL (closed on fridays) and Agra Fort. You also visit Itmad Ud Daullah’s tomb, sometimes called the Baby Taj and you see the tomb of Akbar the Great at Sikandra. Overnight at the hotel. (B, D)
+
+
+<p><b>Day 9: Agra - Jhansi - Khajuraho (415 Kms / 9 Hours)</b></p>
+
+In the morning, you board the train to Jhansi leaving Agra at 0820 hrs and arriving Jhansi at 1035 hrs. Our representative will meet you at the railway station and drive you to Khajuraho. En route, visit Orchha, an ancient city on the banks of Betwa River, Continue to Khajuraho. Check in and spend the night at the hotel. (B, D)
+
+
+<p><b>Day 10: Khajuraho - City Sightseeing</b></p>
+
+In the morning, we begin the full day tour of Khajuraho visiting the Eastern, Western and Southern group of temples. The Khajuraho group of monuments has been listed as a UNESCO World Heritage Site and is considered one of the seven wonders of India. Overnight at the hotel. (B, D)     
+
+
+<p><b>Day 11: Khajuraho - Varanasi (By Flight)</b></p>
+
+In the morning, we transfer you to the airport for the flight to Varanasi. Our representative will meet you at the airport and assist with transfer to hotel. En route, we visit Sarnath and see the Dhamek Stupa (500 AD), Visit the Maha Bodhi Society and Sarnath’s Pillars - all have significance in the Buddhist religion. Check in and Overnight at the hotel. (B, D)
+
+
+
+
+
+<p><b>Day 12: Varanasi - City Sightseeing - Delhi (By Flight)</b></p>
+
+Varanasi is the oldest continuously inhabited city in the world. This morning you take a morning boat ride on the River Ganges. The river holds religious significance for Hindus, Buddhists and Jains. Your city tour tour includes Bharatmata Temple and Textile bazaars. Later you transfer to the airport for a flight to Delhi. You will be met on arrival and transferred to the hotel for your overnight stay in Delhi. (B, D)
+
+
+<p><b>Day 13: Delhi - City Sightseeing</b></p>
+
+Today, you will be taken for the full day city tour of Fascinating Old and New Delhi. In the past 300 years, it has been the capital of seven successive dynasties. Here you will come across a fascinating blend of the ancient and the contemporary where the government buildings,medieval palaces and bazaars co-exist with a modern metropolis. Visit the Red Fort, the Jama Masjid, the Qutab Minar, Humayun’s Tomb,the Lakshmi Narayan Temple, and the India Gate, some of the best examples of India’s ancient architecture. Overnight stay at a hotel in Delhi. (B, D)
+
+
+
+
+<p><b>Day 14: Delhi / Departure</b></p>
+
+After breakfast, checkout from the hotel. Your wonderful vacation comes to an end! Proceed to Delhi International Airport to connect to your onward flight, with wonderful memories to be cherished for a lifetime. (B)
+
+
+
+
+
+
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Deluxe</th>
+    
+  </tr>
+
+  <tr>
+    <td>Agra, Uttar Pradesh, India</td>
+    <td>CRYSTAL SAROVAR PREMIER</td>
+    
+
+    </tr>
+
+    <tr>
+    <td>Delhi, India</td>
+    <td>JAYPEE VASANT CONTINENTAL
+</td>
+    
+
+    </tr>
+    <tr>
+    <td>Jaipur, Rajasthan, India</td>
+    <td>ROYAL ORCHID CENTRAL</td>
+    
+
+    </tr>
+
+    <tr>
+      <td>Khajuraho, Madhya Pradesh, India</td>
+      <td>GOLDEN TULIP</td>
+    </tr>
+
+    <tr>
+      <td>Mumbai, Maharashtra, India</td>
+      <td>AMBASSADOR HOTEL</td>
+    </tr>
+    <tr>
+      <td>Udaipur, Rajasthan, India</td>
+      <td>HOTEL FATEH NIWAS</td>
+    </tr>
+
+    <tr>
+      <td>Varanasi, Uttar Pradesh, India</td>
+      <td>HOTEL SURYA KAISER PALACE</td>
+    </tr>
+    
+    
+</table>
+
+  </div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+  <table>
+    <tr>
+      <th>Hotel</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Twin ( Min. 2 Adults )</th>
+      <th>Twin ( Min. 4 Adults )</th>
+      <th>Single</th>
+    </tr>
+
+    <tr>
+      <td>Deluxe</td>
+      <td>01 Oct 2018</td>
+      <td>31 Mar 2019</td>
+      <td>118170</td>
+      <td>95830</td>
+      <td>166160</td>
+    </tr>
+  </table>
+
+  </div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  
+  <li>13 Nights’ accommodation on twin / double sharing basis in 4 star and Heritage  Hotels</li><br>
+  <li>Breakfast and Dinner Daily</li><br>
+  <li>All sightseeing, excursions as mentioned in the itinerary by air conditioned Vehicle</li><br>
+  <li>Government Service Taxes, Toll Taxes, City Taxes and Driver Allowances</li><br>
+  <li>English Speaking Guide (For respective destination during sightseeing, wherever applicable)</li><br>
+  <li>Entrance fees at monuments</li><br>
+  <li>Boat ride in Udaipur</li><br>
+  
+<h3>Exclusions</h3>
+  
+  <li>Tips, drinks, laundry, telephone calls and all other items of a personal nature</li><br>
+  <li>Any International / Domestic Airfare</li><br>
+  <li>Train fare</li><br>
+  <li>Visa fees or any personal insurance</li><br>
+  <li>Porterage</li>
+   </div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>Meals on arrival and departure days is subject to flight timing</li>
+  <li>Supplementary cost will be applicable if the travel date is during national holidays, festivals, Long weekends and New Year</li>
+  <li>Rates are subject to change in case of   any changes in rate of exchange, Govt. taxes etc</li>
+  <li>In case of Hotel unavailability similar category hotel will be provided</li>
+  <li>Transportation not on disposable basis</li>
+  <li>No refund for any unused service or meals</li>
+  <li>Sakshi Travels reserves the right to change/modify the offer any time without any prior notice.</li>
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

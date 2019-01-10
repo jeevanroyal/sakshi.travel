@@ -1,0 +1,328 @@
++<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+</div>
+
+<div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrive in Rome</b></p>
+
+Welcome to Italy. Arrive at the airport and transfer to hotel for your stay. You have rest of day at leisure. Overnight stay in Rome.
+
+
+
+<p><b>Day 2: Rome - Hop on hop off tour</b></p>
+
+This morning proceed to discover the Eternal City in the easiest and most convenient way, get on board and stop at your pleasure to the most famous monuments of Rome. City Sightseeing Rome will allow you to travel through history and visit the places where the ancient Romans lived their social and political life as well as to admire the great Papal Rome, with its fine buildings and beautiful churches, by just sitting comfortable on board our buses. You will be able to visit the many churches, monuments, palaces, squares and streets of Imperial and Christian Rome, of Baroque and Modern Rome. You can admire the great monuments of ancient Rome like the     and the Circus Maximum. You will see the most beautiful Christian places like St. Peter's Basilica and Santa Maria Maggiore. One must also visit the squares and streets where the history of Rome was written such as Piazza Venezia, Piazza della Repubblica, Piazza del Popolo and Piazza Barberini. Then you can enjoy a walk among the coffee shops of the Dolce Vita in Via Veneto and later drive along the river Tevere and admire Trastevere, one of the old quarters of the City, with its typical restaurants and bars, where you can taste typical Roman dishes. Overnight stay in Rome.
+
+
+
+
+
+<p><b>Day 3: Rome - Florence - Florence Walking tour</b></p>
+
+Today early morning check out from hotel & transfer to Florence.  Enjoy a classical walking tour of Florence to see all the most famous monuments. You can explore the old city center at your own pace and in total relax. Visit San Firenze Square, S. Croce Church (exterior), Signoria Square, Uffizi Gallery (exterior), Ponte Vecchio, Pitti Palace (exterior), Via Maggio, Ponte S. Trinita, Via Tornabuoni, Strozzi Palace (exterior), Repubblica Square, Duomo (exterior). Overnight stay in Florence.
+
+
+
+
+<p><b>Day 4: Florence</b></p>
+
+Day is free for leisure. Overnight stay in Florence.
+
+Optional: - Excursion to Pisa: EUR 45 per person
+
+
+<p><b>Day 5: Florence - Venice</b></p>
+
+After breakfast check out from hotel & proceed to Venice. Arrive & check in at hotel. Overnight stay in Venice.
+
+<p><b>Day 6: Venice - Venice Island Walking tour</b></p>
+
+Today after breakfast, discover the must-see places outside St. Mark's Square, during walking tour. Outdoors visit with a local guide of the area between St. Mark's Square and the Rialto Bridge. This tour will be passing by some special places like La Fenice Theatre, Scala del Bovolo and Rialto Bridge. Overnight stay in Venice.
+
+Note: - Need to reach Venice Island on your own from the Hotel
+
+
+<p><b>Day 7: Venice - Departure</b></p>
+
+After breakfast it’s time to check out. Transfer to the airport for your onward flight or back home.
+
+
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Standard</th>
+    <th>Deluxe</th>
+  
+    
+    
+    
+    
+  </tr>
+  <tr>
+    <td>Florence</td>
+    <td>Basilea / Panorama or similar</td>
+    <td>Diana Park / Select Executive or similar</td>
+    
+
+  </tr>
+
+  <tr>
+    <td>Rome</td>
+    <td>Gabriella / Repubblica or similar</td>
+    <td>Torino / Champagne Palace or similar</td>
+    
+
+  </tr>
+
+  <tr>
+    <td>Venice</td>
+    <td>Centrale /Hotel Piave or similar</td>
+    <td>Plaza Venice Mestre / Novotel Venezia Mestre or similar</td>
+    
+
+  </tr>
+
+  </table>
+  
+ 
+  
+</div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+
+  <table>
+  <tr>
+    <th>Hotel </th>
+    <th>Start Date</th>
+    <th>End Date</th>
+    <th>Twin</th>
+    <th>Single</th>
+  
+    
+  
+  
+  </tr>
+
+ 
+
+    <tr>
+    <td>Standard</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>46391</td>
+    <td>70083</td>
+  
+  
+    </tr>
+
+    <tr>
+    <td>Deluxe</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>61302</td>
+    <td>101065</td>
+  
+    
+    
+    </tr>
+
+    
+
+
+    
+  
+  
+</table>
+
+  
+
+  
+</div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  <li>2 Nights in Rome with Breakfast </li><br>
+  <li>2 Nights in Florence with Breakfast </li><br>
+  <li>2 Nights in Venice with Breakfast </li><br>
+  <li>Rome Hop on hop off city tour on SIC</li><br>
+  <li>Florence Walking tour</li><br>
+  <li>Venice Walking tour </li><br>
+  <li>Rome airport - hotel transfer on private</li><br>
+  <li>Venice hotel - airport transfer on private</li><br>
+  <li>2nd Class Italy 3D/1M Saver Pass</li>
+</ul>
+  
+<h3>Exclusions</h3>
+<ul>
+  <li>Airfare and Taxes</li><br>
+  <li>Visa and Insurances charges</li><br>
+  <li>Any up gradation in hotel room category</li><br>
+  <li>Any meals other than specified above</li><br>
+  <li>Any sightseeing other than mentioned above</li><br>
+  <li>Any Entrance fees or Fees for video or camera permit</li><br>
+  <li>Any item of personal nature like tips, laundry, telephone calls, etc.</li><br>
+  <li>GST will be applicable on total invoice</li>
+  
+</ul>
+</div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>The given prices are valid for travel till  30th September 2018</li>
+  <li>High season surcharges will be applicable</li>
+  <li>The Rate of Exchange (R.O.E) will be the prevailing rate on the day/date of booking</li>
+  <li>Rates are subject to change without prior notice</li>
+  <li>Rooms/Seats are subject to availability at the time of booking</li>
+  <li>Confirmation of Hotels and other services is subject to availability</li>
+  <li>International hotel check in is 1400hrs and checkout would be 1000hrs</li>
+  <li>Early check in and late checkout subject to availability. Itineraries are subject  to change</li>
+  <li>Cancellation charges applicable as per company policy </li>
+  <li>In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised</li>
+  <li>Passport copies of all the passengers are must to initiate the booking</li>
+  <li>We will not be liable for claims or expenses arising from circumstances beyond our control such as accidents, injuries delayed or cancelled flights and acts or forces of nature</li>
+  
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+</div>
+
+<div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrive in Leh</b></p>
+
+Upon arrival in Leh, welcome by our local representative and transfer to a Ladakhi
+
+Style Hotel. Later take a complete rest for Acclimatization to the arid high altitude of Leh (3505 m). Later in the evening enjoy the sunset point (Shanti stupa & Leh Market) followed by dinner and overnight stay at the Hotel.
+
+
+
+<p><b>Day 2: Sham Valley Excursion (90 Kms round trip)</b></p>
+
+After breakfast you drive downstream along the River Indus on Leh – Kargil Highway. Enjoy sightseeing with Hall of Fame (Museum Constructed by India Army) near Leh is worth a visit for every Indian, and proceed further to Gurudwara Patthar Sahib Nestled deep in the Himalayas, A drive of another 4 km took us to Magnetic Hill which defies the law of gravity & further Driving through a picturesque landscape we reached the Confluence Of The Indus And Zanskar River. After visiting above places we drive back to Leh enroute visiting Spituk Monastery, Built in 15th century during the reign of Grags ‘bum-lde, these new Gelug-pa monastery was built like fortress on the summit of crags. Evening at leisure and Overnight at Hotel in Leh
+
+
+
+
+
+
+
+<p><b>Day 3: Leh - Nubra valley (125 Kms / 4Hrs)</b></p>
+
+Today after breakfast drive about 04- 05 hrs. [125 kms] to Nubra – known as valley of flowers. After drive about 02 hrs. We will reach – The world's highest motorable road called Khardungla high about 18,380 feet above sea level. From the top we can see the most beautiful view of Indus valley & its snow covered peaks towering the sky and other side of the pass if weather remain clear we can see Karakorum mountain range and peaks too. We descend down to beautiful valley & transfer to the hotel, later have rest till evening ,before sunset we will take you for a short drive to Hunder sand dunes to visit & ride double humped bactrian camel, later back to hotel for overnight stay. If time permits we will have a village walk to see local people & its culture.
+
+
+
+
+
+<p><b>Day 4: Nubra to Leh</b></p>
+
+Morning after breakfast we will visit the most picturesque Disket monastery on the hill top. Later continue drive to other side of Nubra valley – was the main part of silk route. We will continue our drive back to Leh via Khardungla. Reach Leh & transfer to Hotel for overnight stay.
+
+
+
+
+
+
+<p><b>Day 5: Leh to Pangong, via Changla pass - 5320 mts) (150 kms /5-6hrs)</b></p>
+
+After breakfast, drive (154 km/ 6 hrs) to the spectacular Changthang Valley, winding your way over the exhilarating Chang la (5320m.)- The second highest point of our journey. The landscape on the way to Pangong is just spectacular. Overnight in camp or guesthouse.
+<p><b>Day 6: Pangong Explore and drive back to Leh.</b></p>
+The Lake is situated at 13,930 ft./ about 4300 mts. above sea level and is 125 km long, but is  only four km at its widest, and extends almost in a straight line, way to Tibet; in fact, only a quarter of the lake is in India. En route you will see some Himalayan marmots & migrated birds. Later leave for Leh for overnight in a hotel
+
+
+<p><b> Day 7: Departure</b></p>
+
+Transfer to Airport for onwards journey.
+
+
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Standard</th>
+  
+  
+    
+    
+    
+    
+  </tr>
+  <tr>
+    <td>Leh</td>
+    <td>Dimbir Residency/ Royal Hills /similar</td>
+
+    
+
+  </tr>
+
+  <tr>
+    <td>Nubra Valley</td>
+    <td>Nubra Eco Village/Paradise Camp / Similar</td>
+  
+    
+
+  </tr>
+
+  <tr>
+    <td>Pangong Lake</td>
+    <td>Nomad/ Pangong holiday cottage /Similar</td>
+    
+
+  </tr>
+
+  </table>
+  
+ 
+  
+</div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+
+  
+
+  
+
+  
+</div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  <li>Return Airfare from  New Delhi.</li><br>
+  <li>Accommodation on twin sharing basis.</li><br>
+  <li>Meals: Breakfast & Dinner.</li><br>
+  <li>Assistance upon arrival and departure, welcome in Ladakhi style tea In Hotel or Guest House.</li><br>
+  <li>Transfers, Sightseeing & overland journey by non-air-conditioned Vehicle .</li><br>
+  <li>Wildlife fee.</li><br>
+  <li>Environment fee charges.</li><br>
+  <li>First Aid Medical kit in Cab.</li>
+</ul>
+  
+<h3>Exclusions</h3>
+<ul>
+  <li>Meals other than those specified above</li><br>
+  <li>Personal expenses like portages, tips, laundry, mineral water etc.</li><br>
+  <li>Monument entrances, camera charges, etc.</li><br>
+  <li>Any activity not mentioned in the inclusions</li><br>
+  <li>Travel Insurance</li><br>
+  <li>Additional cost due to flight cancellation/ roadblocks, Political unrest etc.</li><br>
+  <li>Additional cost of Hotel to be borne by customer in case of road blockage due to snow. (Enroute Nubra & Pangong)</li>
+  
+</ul>
+</div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>Per person prices are quoted on twin-share basis (2 persons sharing a room).</li>
+  <li>A maximum of 3 adults are allowed in one room.</li>
+  <li>The third occupant of the room shall be provided a mattress/rollaway bed.</li>
+  <li>The package price does not include –Expenses of personal nature, such as laundry, telephone calls, room service, alcoholic beverages, mini bar charges, tips, portage, camera fees etc. Any meals and services not specifically mentioned in the inclusions</li>
+  <li>Airline seats and hotel rooms are subject to availability at the time of booking.</li>
+  <li>In case of unavailability in the listed hotels, arrangement for an alternate accommodation will be made in a hotel of similar standard.</li>
+  <li>Room heaters if required can be provided on chargeable basis, subject to availability.</li>
+  <li>Hot water is only provided for 2 hours during the morning and evening in Leh. In camps, hot water is only available for a limited time in the morning.</li>
+  <li>Only vegetarian meals are served at Nubra and Pangong.</li>
+  <li>Connectivity (phone as well as internet) is poor and unreliable in Ladakh. Most hotels will not have a Wi-Fi connection.</li>
+  <li>Transportation shall be provided as per the itinerary and will not be at disposal.</li>
+  <li>We reserves the right to modify the itinerary at any point, due to reasons including but not limited to:  Force Majeure events, strikes, fairs, festivals, weather conditions, traffic problems, overbooking of hotels / flights, cancellation / re-routing of flights, closure of / entry restrictions at a place of visit, etc. While we will do our best to make suitable alternate arrangements, we would not be held liable for any refunds/compensation claims arising out of this.</li>
+  <li>It is mandatory for all guests to carry valid photo IDs (Passport/Driving License/Voter ID Card). PAN Card is not accepted at many places as a valid photo ID.</li>
+  <li>People from Pakistan, Sri Lanka, Bangladesh, China, Myanmar and Bhutan cannot travel to restricted areas outside Leh such as Nubra Valley, Pangong, and Tsomoriri etc. Nationals of countries other than these can travel to Ladakh provided they don’t have a Diplomatic passport.</li>
+  <li>For queries regarding cancellations and refunds, please refer to our Cancellation Policy.</li>
+  
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

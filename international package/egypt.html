@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+</div>
+
+<div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrive in Cairo</b></p>
+
+Welcome to Egypt. Arrive at Cairo airport and transfer to hotel for your stay. Overnight stay in Cairo.<p><b>Day 2: Cairo - Visit Pyramids</b></p>
+
+This morning proceed for full day tour to visit the Great Pyramids of Giza, Le Sphinx, Memphis and Saqqara. Transfer back to your hotel. Overnight stay in Cairo.<br><br>
+
+<p><b>Day 3: Cairo - Aswan - Onboard Cruise (Every Sunday or Wednesday or Friday)</b></p>
+
+Today after breakfast check out from hotel & transfer to Cairo Airport for your flight to Aswan. Arrive to Aswan Airport then transfer to your Cruise for three nights sailing from Aswan to Luxor. Embarkation and lunch on board the Cruise. Afternoon tour by felucca around the Elephantine Island, Botanical Garden and Aga Khan. Dinner & Overnight on board the Cruise in Aswan.
+
+Note: - Cruise departs on every Sunday, Wednesday or Friday.
+
+
+
+
+<p><b>Day 4: Onboard Cruise</b></p>
+
+Buffet breakfast on board the Cruise. Later proceed with the visit of Aswan including the High Dam, The Unfinished Obelisk and the temple of Phile. Lunch on board the Cruise and sail to Kom Ombo. Visit the temple of Kom Ombo dedicated to Gods Sobek and Haroeris. Afternoon sail to Edfu. Dinner and overnight on board the Cruise in Luxor.
+<p><b>Day 5: Onboard Cruise</b></p>
+
+After breakfast on board the Cruise proceed to visit the temple of Edfu, dedicated to the god Horus. Lunch on board during sailing to Esna. Cross Esna lock and sail to Luxor. Dinner and overnight on board the Cruise in Luxor.
+
+<p><b>Day 6: Onboard Cruise - Luxor - Cairo</b></p>
+
+Today after breakfast disembarkation and proceed with the visits of the West Bank of the Nile including Two Colossi of Memnon , The temple of Queen Hatshepsut at EL Dier El Bahari and the Valley of Kings. Transfer to Luxor airport for you flight to Cairo, and upon arrival you’ll be met and transferred to your hotel for check in and overnight in Cairo.
+<p><b>Day 7: Cairo - Departure</b></p>
+
+After breakfast it’s time to check out. Transfer to the George airport for your onward flight or back home.
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Deluxe</th>
+    <th>Premium</th>
+    
+  </tr>
+  <tr>
+    <td>Cairo</td>
+    <td>The Oasis Hotel or similar/Novotel Airport or similar</td>
+    <td>Steigenberger Cairo Pyramids or similar/Holiday Inn City Stars or similar</td>
+  </tr>
+  <tr>
+    <td>Cruise</td>
+    <td>Radamis I (Sunday) / Tamr Henna (Wednesday) / princess Sarah (Friday) or similar</td>
+    <td>Radamis I (Sunday) / Tamr Henna (Wednesday) / princess Sarah (Friday) or similar</td>  
+  </tr>
+      
+</table>
+  
+ 
+  
+</div>
+<div id="Price" class="tabcontent">
+  <h3>Price</h3>
+  
+<table>
+  <tr>
+    <th>Hotel </th>
+    <th>Start Date  </th>
+    <th>End Date</th>
+    <th> Twin ( Min. 2 Adults )</th>
+    <th>Triple ( Min. 4 Adults )</th>
+    <th>Single</th>
+    <th>Child no bed</th>
+    
+  </tr>
+  
+  
+   <tr>
+    <td>Deluxe</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>25676</td>
+    <td>21753</td>
+    <td>24962</td>
+    <td>34234</td>
+    <td>-</td>
+       
+  </tr>
+  <tr>
+    <td>Deluxe</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>40011</td>
+    <td>32094</td>
+    <td>40011</td>
+    <td>40011</td>
+    <td>20113</td>
+       
+  </tr>
+   <tr>
+    <td>Premium</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>28172</td>
+    <td>24249</td>
+    <td>  27316</td>
+    <td>38157</td>
+    <td>-</td>
+       
+  </tr>
+  <tr>
+    <td>Premium</td>
+     <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>43220</td>
+    <td>35304</td>
+    <td>43220</td>
+    <td>57056</td>
+    <td>21610</td>
+       
+  </tr>
+  
+</table>
+</div>
+
+
+</div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  <li>2 Nights in Cairo with breakfast</li><br>
+  <li>3 Nights on board Nile Cruise with breakfast, lunch and dinner (Cruise departs on Friday, Sunday and Wednesday)</li><br>
+  <li>1 Night in Cairo with breakfast</li><br>
+  <li>Full day visits the great pyramids of Giza, Sphinx, the Egyptian museum, and khan el khalili old bazaars</li><br>
+  <li>Visit Felucca around Elephantine Island, Botanical garden</li><br>
+  <li>Visit high Dam, the unfinished obelisk and the temple of Philae</li><br>
+  <li>Visit temple of Kom-Ombo, dedicated for gods Sobek and Haroeris</li><br>
+   <li>Visit the temple of Edfu, dedicated to the god Horus</li><br>
+  <li>The visits of West bank including the two colossi of Memnon, the temple of Queen Hatshepsut</li><br>
+  <li>Inter-city transfers Montreal-Ottawa-Toronto by VIA Rail (Economy class - Chair Class)</li><br>
+  <li>All sightseeing & transfers as per the itinerary in private A/C modern vehicle with Local English speaking guide</li><br>
+  
+</ul>
+<h3>Exclusions</h3>
+<ul>
+  <li>Airfare and Taxes</li><br>
+  <li>Any increase in Govt. taxes, Fuel price and any applicability of new taxes from the govt.</li><br>
+  <li>Any up gradation in hotel room category</li><br>
+  <li>Any meals other than specified above</li><br>
+  <li>Any sightseeing other than mentioned above</li><br>
+  <li>Any Entrance fees or Fees for video or camera permit</li><br>
+  <li>Any item of personal nature like tips, laundry, telephone calls, etc.</li><br>
+  <li>GST will be applicable on total invoice</li><br>
+</ul>
+</div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>The given prices are valid for travel till 31st March 2019</li><br>
+  <li>High season surcharges will be applicable</li><br>
+  <li>Prices are subject to change without prior notice</li><br>
+  <li>Rooms/Seats are subject to availability at the time of booking</li><br>
+  <li>Vehicle will be not at disposal. If guest wish to go for additional sightseeing extra charges will be applicable</li><br>
+  <li>Please carry original ID Proof (Voter ID card /Passport/Driving License) etc. for security purpose and hotel policy</li><br>
+  <li>Early check in and late checkout subject to availability. Itineraries are subject  to change</li><br>
+  <li>Cancellation charges applicable as per company policy</li><br>
+  <li>In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised</li><br>
+  <li>We will not be liable for claims or expenses arising from circumstances beyond our control such as accidents, injuries delayed or cancelled flights & acts or forces of nature</li><br>
+  
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

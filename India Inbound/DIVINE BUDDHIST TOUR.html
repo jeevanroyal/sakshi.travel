@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+</div>
+
+<div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Divine buddhist tour\kerala-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Divine buddhist tour\kerala-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Divine buddhist tour\kerala-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Divine buddhist tour\kerala-1.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrive in Delhi</b></p>
+Upon arrival at Delhi International airport meet with our representative at the airport arrival lounge. After meet and greet at airport transfer to the hotel.Check in at the Hotel (Check in Mid-Day). After noon sightseeing of old & New Delhi.Sightseeing tour of Old Delhi begins with a visit to Jama Mosque, the largest mosque in India, built in 1650 AD.This is followed by a drive past the Red Fort (Closed on Mondays) (1639-48), built by Emperor Shah Jahan, creator of The TajMahal. Later proceed to Raj Ghat - the site of the memorial to Mahatma Gandhi.After visiting the old Delhi proceed to New Delhi sightseeing begins with a drive past Safdarjang’s Tomb (1753 AD) while we are on the way to the Qutab Minar (1193 A.D.). Within the Qutab complex, amidst the ruins of Quwat-ul-Islam mosque, stands the Iron pillar which has stood the vagaries of weather and has not rusted for over 1500 years. Continue your tour to visit the Humayun’s Tomb. Later drive through the Embassy area,Diplomatic enclave, stop for a quick photo shoot at India Gate and Rashtrapati Bhawan  (Presidential Estate formerly Viceroy’s House) and Connaught Place, New Delhi’s main shopping area.Return to the Hotel for Overnight
+<p><b>Day 2: Delhi – Lucknow –Sravasti</b></p>
+Breakfast at the Hotel After breakfast transfer to the airport to board the flight for Lucknow. Arrive Lucknow. Upon arrival at Lucknow airport meet with our representative and drive to Sravasti, the capital of the ancient kingdom of Kosala, has the honour for sheltering Buddha for 24 rainy seasons in the Jetavana Gardens. It is sacred to Buddhists because it is here that Lord Buddha performed the Tirthikaheretics. Upon arrival check into the hotel. After fresh-n-up sightseeing tour around Sravasti visiting Jetavana and Ananda Bodhi Tree. Return to the Hotel.Dinner and Overnight at the Hotel<br><br>
+
+<p><b>Day 3: Sravasti - Lumbini</b></p>
+Breakfast at the Hotel. After breakfast leave for Lumbini- the birthplace of Lord Buddha. The birthplace of Lord Buddha where he known as Gautam in his childhood, Lumbini is situated in the southern Terai plains of Nepal. Lumbini is also a World Heritage Monument of UNESCO.Upon arrival at Lumbini transfer to the hotel and Check in.Afternoon visit the Ashoka Pillar. It was built in the year 259BC, by King Ashoka of India. In the 07th century, the pillar was struck by lightning and split into two parts.In the evening have a walk through Monasteries made by many nationals.Return to the hotel.Dinner and Overnight at the Hotel.
+
+<p><b>Day 4: Lumbini – Kushinagar</b></p>
+Breakfast at the Hotel.After breakfast visit Maya Devi Temple, dedicated to the mother of Lord Buddha, Maya Devi. The temple was built during the 02nd century.Later drive to Kushinagar crossing Indo - Nepal border.Upon reaching transfer to the hotel. Check in at the hotel. After fresh-n-up at the hotel visit to the monuments of Kushinagar visiting Nirvana Temple and Ramabhar Stupa.Return to the Hotel.Dinner and Overnight at the Hotel.
+<p><b>Day 5: Kushinagar Vaishali -Rajgir</b></p>
+Early Breakfast at the Hotel.After breakfast leave for Rajgir via Vaishali. According to the historians, Vaishali is one of the first democratic republics of the world.In Vaishali we will be visiting Ashoka Pillar, Buddhastupa and Shantistupa.Later continue drive to Rajgir. En-route we will visit the ruins of Nalanda University. Founded in the 5th Century A.D., Nalanda is known as the ancient seat of learning. 2000 teachers and 10000 Students from all over the Buddhist world lived and studied at Nalanda, the first Residential International University of the World. A walk in the ruins of the university takes you to an era that saw India leading in imparting knowledge, to the world - the era when India was a coveted place for studies. The University flourished during the 5th and 12th century.Upon arrival at Rajgir check into the hotel. Overnight stay in Rajgir.
+<p><b>Day 6: Rajgir - Bodhgaya</b></p>
+Breakfast at the Hotel.After Breakfast sightseeing around Rajgir. Lord Buddha spent many months of retreat during the rainy season here, and use to meditate and preach on Gridhakuta, the "Hill of the Vultures". Lord Mahavir spent 14 years of his life at Rajgir and nalanda. It was in Rajgir that Lord Buddha delivered some of his famous sermons and converted king Bimbisara of the Magadha Kingdom and countless others to his creed. Here we will visit the monastery of Venuvana Vihar built by King Bimbisara for Lord Buddha to reside. This was the King's first offering to Lord Buddha.Later in the afternoon drive to Bodhgaya. Upon arrival check into the hotel.Dinner and Overnight at the Hotel.
+
+
+<p><b>Day 7: Bodhgaya</b></p>
+Breakfast at the hotel.After Breakfast full day excursion to Bodhgaya and Gaya. We will be visiting The Mahabodhi Temple, Bodhi Tree, Great Buddha Statue, Niranjana River, and Sujata Temple And lots of other significant temples.The Mahabodhi temple built on the east of the sacred tree stands majestically 17 feet high on a base 5 feet square, and consists of a soaring pyramidal tower surmounted by a stupa. The Vajrasana or Diamond Throne lying between the Bodhi Tree and the temple marks the actual spot where Buddha sat in meditation and attained supreme knowledge. A gilded Buddha smiles upon the visitors from a niche in the wall of the temple, and his footsteps carved in stone hold flower offerings from the devout. Visit several Buddhist temples built by the followers of Buddhism from all over the world. Dinner and Overnight at the Hotel
+<p><b>Day 8: Bodhgaya – Varanasi</b></p>
+Early Breakfast at the Hotel.After breakfast proceed Varanasi.Before arriving to Varanasi, visit to Sarnath. It enjoys the extraordinary privilege of Lord Buddha delivering his first sermon after attaining enlightenment 2500 years ago.You can also visit the ruins of Dharmarajika Stupa and Mulagandhakuti Temple, where Lord Buddha is said to have rested and meditated while in Sarnath. The Ashoka Pillar built by the emperor Ashoka is a must see in Sarnath.Later proceed to Varanasi.Arrive Varanasi and check in at the hotel.In the evening transfer to the river ghat to have the glimpse of evening Aarti. Return to hotel.Dinner and overnight at the hotel
+<p><b>Day 9: Varanasi - Delhi</b></p>
+Early morning proceed on a boat tour on River Ganges visiting all the bathing ghats.Return to hotel for breakfast.After breakfast transfer to the airport.Your wonderful vacation comes to an end.Proceed to International Airport to connect to your onward flight, with wonderful memories to be cherished for a lifetime.
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Deluxe</th>
+        
+  </tr>
+  <tr>
+    <td>Bodhgaya, Bihar, India</td>
+    <td>Bodhgaya Regency or similar</td>
+    </tr>
+  <tr>
+    <td>Delhi ,India</td>
+    <td>The Park or similar</td>
+  </tr>
+  <tr>
+    <td>Kushinagar, Uttar Pradesh, India</td>
+    <td>Lotus Nikko or similar</td>
+    </tr>
+  <tr>
+    <td>Lumbini</td>
+    <td>Buddha Maya Garden or similar</td>
+  </tr>
+  <tr>
+    <td>Rajgir, Bihar, India</td>
+    <td>Nalanda Regency or similar</td>
+  </tr>
+  <tr>
+    <td>Sravasti, Uttar Pradesh, India</td>
+    <td>Lotus Nikko or similar</td>
+    </tr>
+  <tr>
+    <td>Varanasi, Uttar Pradesh, India</td>
+    <td>Hindusthan Int or similar</td>
+  </tr>
+  
+      
+</table>
+  
+ 
+  
+</div>
+<div id="Price" class="tabcontent">
+  <h3>Price</h3>
+  
+<table>
+  <tr>
+    <th>Hotel </th>
+    <th>Start Date  </th>
+    <th>End Date</th>
+    <th>Twin ( Min. 2 Adults )</th>
+    <th>Twin ( Min. 4 Adults )</th>
+    <th>Single</th>
+    
+       
+  </tr>
+  
+  
+   <tr>
+    <td>Deluxe</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>63860</td>
+    <td>51460</td>
+    <td>85250</td>
+    
+    
+           
+  </tr>
+  
+  
+</table>
+</div>
+
+
+</div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  <li>08 Nights’ accommodation as per the Hotel given above net per person on twin sharing Bed & Breakfast basis.</li><br>
+  <li>8 Dinner & 8 Breakfast at the Hotel</li><br>
+  <li>Meeting and assistance at airport by our representative. </li><br>
+  <li>Arrival & Departure transfer by Air-condition small car. </li><br>
+  <li>Sightseeing tours by Air-condition small car with English speaking guide & entrance fees as per the Itinerary </li><br>
+  <li>Presently applicable taxes.</li><br>
+  <li>Hotel Check - in Time: 1400 hrs. & Hotel Check - out Time: 1100 hrs.</li><br>
+  
+ 
+</ul>
+<h3>Exclusions</h3>
+<ul>
+  <li>Sightseeing except the above mentioned places </li><br>
+  <li>Any kind of insurance.</li><br>
+  <li>Airfare / Rail fare</li><br>
+  <li>Visa Charges </li><br>
+  <li>Expenses of personal nature such as laundry bills, bar bills, telephone bills, tipping, porterage at airports/hotels.</li><br>
+  <li>Camera/video camera fees & museum fees (if any). </li><br>
+  <li>Any other services which are not included in the above cost. </li><br>
+  <li>Any Kind of Drinks (Alcoholic, Mineral, Aerated) </li><br>
+  <li>The service of Vehicles is not included on leisure days & after completing the sightseeing tour as per the itinerary.</li><br>
+  <li>GST @ 5% currently as applicable </li><br>
+</ul>
+</div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>The prices are valid for travel from 1st October 2018 to 31st March 2019</li><br>
+  <li>High season surcharges will be applicable</li><br>
+  <li>Prices are subject to change without prior notice</li><br>
+  <li>Rooms/Seats are subject to availability at the time of booking</li><br>
+  <li>Vehicle will be not at disposal. If guest wish to go for additional sightseeing extra charges will be applicable</li><br>
+  <li>Please carry original ID Proof (Voter ID card /Passport/Driving License) etc. for security purpose and hotel policy</li><br>
+  <li>Cancellation charges applicable as per company policy</li><br>
+  <li>In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised</li><br>
+  <li>We will not be liable for claims or expenses arising from circumstances beyond our control such as accidents, injuries delayed or cancelled flights & acts or forces of nature</li><br>
+  
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+} 
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;  
+}
+
+/* Create an active/current "tab button" class */    
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+  </div>
+
+
+  <div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Spectacular South\Spectacular South-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Spectacular South\Spectacular South-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Spectacular South\Spectacular South-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Spectacular South\Spectacular South-4.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");             
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">    
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrival Chennai</b></p>
+
+We meet you on arrival and assist with transfer to hotel in Chennai. In the afternoon, we tour this cultural heartland and gateway to South India. Overnight at hotel. (D)
+ 
+
+
+
+<p><b>Day 2: Chennai - Mahabalipuram Day tour</b></p>
+
+We visit Mahabalipuram a beautiful beach resort town with miles of unspoiled beach. It is the birthplace of the art and architecture of South India. We see Rathas (Chariots), Arjuna’s Penance (a bas relief), Krishna Mandapa, the Shore Temple, Mahishasurmardini Cave, Varaha Mandapa and Mandapams. Overnight at hotel in Chennai. (B, D)
+
+
+<p><b>Day 3: Chennai - Mysore by Train (500Km/ 8Hrs)</b></p>
+
+Experience a journey on India’s flagship the Shatabdi Express train to Mysore. Sitting 770m above sea level, Mysore is an easy going city famous for its silk trade and sandalwood and incense centre. The city is steeped in history. The Mysore Palace boasts a kaleidoscope of stained glass, mirrors, gilt and colours. See beautifully carved wooden doors and mosaic floors, as well as exquisite paintings. Half-way up the Chamundi Hill, see the Nandi Bull, a 4.8m monolith carved out of solid rock. Hordes of pilgrims come here throughout the year. Right on top is the 2000 year old Chamundeswari Temple with its typical festive atmosphere. Visit the colourful and aromatic Devraj Fruit and Vegetable market. Check In at hotel for night. (B, D)
+
+
+
+
+
+
+
+
+
+<p><b>Day 4: Mysore - Bengaluru Airport - Cochin</b></p>
+
+Our three-hour drive takes us to Bengaluru Airport for a short flight to Cochin. After arrival at Cochin Airport, check in at room and overnight at hotel in Cochin. (B, D)
+
+
+
+
+<p><b>Day 5: Cochin - Alleppey (60Km/ 1.5Hrs)</b></p>
+
+Breakfast at the hotel.After breakfast, we explore “God’s Own Country”, the commercial hub of Kerala with a tour of Cochin visiting the Dutch Palace, the Jewish Synagogue, the St. Francis Church and the Chinese fishing nets. The afternoon we board a housboat for a cruise through the paddy fields, narrow canals and channels of Kerala. Explore Backwaters and meals on the Houseboat. Overnight on House Boat. (B, L, D)
+
+
+
+
+
+<p><b>Day 6: Alleppey - Kumarakom (35Km/ 1Hr)</b></p>
+
+Breakfast at the Hotel. After breakfast, disembark at Alleppey and proceed for Kumarakom, the ideal place to experience the fascinating lifestyles of the area. The accommodation consists of individual cottages built in the traditional Kerala style, relying heavily on wood. Some cottages have private pools. Check In at the Resort. (B, D)
+
+
+
+<p><b>Day 7: Kumarakom / Cochin Airport (80Km/ 2Hrs)</b></p>
+
+After breakfast, check out from hotel and transfer towards the Cochin Airport for connecting flight to your home. Your wonderful vacation comes to an end! Proceed to Cochin International Airport to connect to your onward flight, with wonderful memories to be cherished for a lifetime. (B)
+
+
+
+
+
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Deluxe</th>
+    
+  </tr>
+
+  <tr>
+    <td>Alleppey, Kerala, India</td>
+    <td>HOUSE BOAT</td>
+    
+
+    </tr>
+
+    <tr>
+      <td>Chennai, Tamil Nadu, India</td>
+      <td>FORTUNE SELECT GRAND CHENNAI</td>
+    </tr>
+
+    <tr>
+      <td>Cochin, Kerala, India</td>
+      <td>CASINO HOTEL</td>
+    </tr>
+
+     <tr>
+      <td>Kumarakom, Kerala, India</td>
+      <td>PARADISE RESORT</td>
+    </tr>
+
+    <tr>
+      <td>Mysore, Karnataka, India</td>
+      <td>FORTUNE PARK JP PALACE</td>
+    </tr>
+
+     
+
+    
+    
+</table>
+
+  </div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+  <table>
+    <tr>
+      <th>Hotel</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Twin ( Min. 2 Adults )</th>
+      <th>Twin ( Min. 4 Adults )</th>
+      <th>Single</th>
+  
+    </tr>
+
+    <tr>
+      <td>Deluxe</td>
+      <td>01 Oct 2018</td>
+      <td>31 Mar 2019</td>
+      <td>61230</td>
+      <td>48880</td>
+      <td>83590 </td>
+    </tr>
+  </table>
+
+  </div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  
+  <li>06 Nights’ accommodation on twin / single sharing basis in 4 star and Heritage Hotels </li><br>
+  <li>Breakfast and Dinner Daily (As per itinerary)</li><br>
+  <li>Breakfast, Lunch & dinner on House boat</li><br>
+  <li>All sightseeing, excursions as mentioned in the itinerary by air conditioned Vehicle  </li><br>
+  <li>Government Service Taxes, Toll Taxes, City Taxes and Driver Allowances  </li><br>
+  <li>English Speaking Guide (For respective destination during sightseeing, wherever applicable)</li><br>
+  <li>Entrance fees at monuments</li>
+  
+  
+<h3>Exclusions</h3>
+  
+  <li>Tips, drinks, laundry, telephone calls and all other items of a personal nature</li><br>
+  <li>Any International / Domestic Airfare</li><br>
+  <li>Train fare </li><br>
+  <li>Visa fees or any personal insurance </li><br>
+  <li>Porterage</li><br>
+  
+  
+   </div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>Meals on arrival and departure days is subject to flight timing</li>
+  <li>Supplementary cost will be applicable if the travel date is during national holidays, festivals, Long weekends and New Year</li>
+  <li>Rates are subject to change in case of   any changes in rate of exchange, Govt. taxes etc</li>
+  <li>In case of Hotel unavailability similar category hotel will be provided</li>
+  <li>Transportation not on disposable basis</li>
+  <li>No refund for any unused service or meals</li>
+  <li>Sakshi Travels INC… reserves the right to change/modify the offer any time without any prior notice.</li>
+
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

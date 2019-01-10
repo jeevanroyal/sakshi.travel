@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+} 
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;  
+}
+
+/* Create an active/current "tab button" class */    
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+  </div>
+
+
+  <div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Khajuraho\Khajuraho-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Khajuraho\Khajuraho-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Khajuraho\Khajuraho-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Khajuraho\Khajuraho-4.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");             
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">    
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Delhi - Jhansi – Khajuraho</b></p>
+
+After early Tea / Coffee Proceed to the railway station with a packed breakfast 
+Depart Delhi by the Shatabdi Express train at 08.00 Hrs. Arrive Jhansi at 10.45 Hrs. After arrival visit Jhansi and Orchha. Jhansi is a historic city in the Indian state of Uttar Pradesh. On the banks of the Pahuj River.  Orchha is a town in  Madhya Pradesh state. The town was established by the Rajput King Rudra Pratap Singh  in the 16th century AD. After the visit Proceed to Khajuraho (180 KM/5Hrs). Arrive Khajuraho and Check in, overnight at the Hotel. (B, D)
+
+
+
+
+<p><b>Day 2: In Khajuraho</b></p>
+
+After breakfast visit The Western Group of Temples, the Eastern Group of Temples and the Southern Group of Temples. These temples are dedicated to several Hindu Gods and Goddesses along with deities of the Jain religion. Among the temples that are standing till now, 6 are dedicated to Lord Shiva, 8 to Lord Vishnu, 1 each to Lord Ganesha and the Sun God, while 3 are dedicated to Jain Tirthankaras. The largest of the temples is the KandariyaMahadeo Temple that is dedicated to the glory of Lord Shiva. It makes Khajuraho one of the four holy sites dedicated to the glory of Lord Shiva, the other three being Gaya, Kashi and Kedarnath. Return to the hotel. Afternoon at leisure. Overnight at the hotel. (B, D)
+
+
+
+
+
+
+<p><b>Day 3: Khajuraho – Varanasi</b></p>
+
+Breakfast at the hotel. After breakfast Transfer to the Airport and Depart to Varanasi. Arrive Varanasi and Check in at the hotel. In the afternoon, visit the  famous city of Sarnath, north east of Varanasi – it is as holy to Buddhists as Varanasi is to Hindus. Having achieved enlightenment at Bodhgaya, Buddha came to Sarnath to preach his message of the way to Nirvana. Later, Ashoka, the great Buddhist Emperor erected magnificent Stupas and monasteries at Sarnath. What is visible today are the ruins of a once flourishing Buddhist monastery and a fine museum which houses an excellent collection of Buddhist art and sculptures. Return to the Hotel and Overnight (B, D)
+
+
+
+
+
+
+<p><b>Day 4: Varanasi – Delhi</b></p>
+
+Early morning enjoy Tea and coffee at the hotel. Proceed for a boat ride on the river Ganges. The best time to visit the Ghats is at dawn when pilgrims take their morning dip. The most famous Ghat is the Dasaswamedh Ghat from where we begin this tour. Enjoy the boat ride while looking out for people on the Ghats – the women bathing discreetly in their sarees, the young men displaying prowess in yogic postures & the Brahmin priests offering prayers for one and all. Amidst all this you may also come across the burning Ghats which are cremation sites for the dead. Return to the hotel for Breakfast. After breakfast Proceed to the Airport Varanasi – Delhi flight. Arrive Delhi, return to the hotel for an overnight stay. (B, D)
+ 
+
+
+
+
+
+
+<p><b>Day 5: Depart Delhi</b></p>
+
+Breakfast at the Hotel. After Breakfast check out from the Hotel. Your wonderful vacation comes to an end! Proceed to Delhi International Airport to connect to your onward flight, with wonderful memories to be cherished for a lifetime. (B)
+ 
+
+
+
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Deluxe</th>
+    
+  </tr>
+
+  <tr>
+    <td>Delhi, India</td>
+    <td>Jaypee Vasant Continental</td>
+    
+
+    </tr>
+
+    <tr>
+    <td>Khajuraho, Madhya Pradesh, India</td>
+    <td>Ramada Khajuraho</td>
+    
+
+    </tr>
+    <tr>
+    <td>Varanasi, Uttar Pradesh, India</td>
+    <td>Surya Kaiser Palace</td>
+    
+
+    </tr>
+
+    
+</table>
+
+  </div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+  <table>
+    <tr>
+      <th>Hotel</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Twin ( Min. 2 Adults )</th>
+      <th>Twin ( Min. 4 Adults )</th>
+      <th>Single</th>
+    </tr>
+
+    <tr>
+      <td>Deluxe</td>
+      <td>01 Oct 2018</td>
+      <td>31 Mar 2019</td>
+      <td>35580</td>
+      <td>27085</td>
+      <td>48580</td>
+    </tr>
+  </table>
+
+  </div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  
+  <li>4 Nights’ accommodation on twin / single sharing basis in 4 star and Heritage Hotels</li><br>
+  <li>Breakfast and Dinner Daily (As per itinerary)</li><br>
+  <li>All sightseeing, excursions as mentioned in the itinerary by air conditioned Vehicle</li><br>
+  <li>Government Service Taxes, Toll Taxes, City Taxes and Driver Allowances</li><br>
+  <li>English Speaking Guide (For respective destination during sightseeing, wherever applicable)</li><br>
+  <li>Entrance fees at monuments</li>
+<h3>Exclusions</h3>
+  
+  <li>Tips, drinks, laundry, telephone calls and all other items of a personal nature</li><br>
+  <li>Any International / Domestic Airfare</li><br>
+  <li>Train fare</li><br>
+  <li>Visa fees or any personal insurance</li><br>
+  <li>Porterage</li><br>
+  <li>Anything not included in above itinerary / Inclusions</li>
+</ul>
+  </div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>Meals on arrival and departure days is subject to flight timing</li>
+  <li>Supplementary cost will be applicable if the travel date is during national holidays, festivals, Long weekends and New Year</li>
+  <li>Rates are subject to change in case of   any changes in rate of exchange, Govt. taxes etc</li>
+  <li>In case of Hotel unavailability similar category hotel will be provided</li>
+  <li>Transportation not on disposable basis</li>
+  <li>No refund for any unused service or meals</li>
+  <li>Sakshi Travels reserves the right to change/modify the offer any time without any prior notice.</li>
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

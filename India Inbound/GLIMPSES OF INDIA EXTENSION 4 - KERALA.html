@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+} 
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;  
+}
+
+/* Create an active/current "tab button" class */    
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+  </div>
+
+
+  <div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Kerala\kerala-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Kerala\kerala-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Kerala\kerala-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Kerala\kerala-4.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");             
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">    
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Delhi – Cochin</b></p>
+
+Breakfast at the Hotel.After Breakfast proceed to the airport and depart to Cochin. Arrive Cochin. On arrival you will met by our representative at the airport and transferred to the hotel. Check in at the Hotel (Check in Mid-day) Afternoon, proceed for the sightseeing tour of Cochin. The tour begins from “The Dutch Palace (closed on Fridays)” also known as Mattancherry Palace, built by Portuguese in 1555, which is famous for its murals depicting scenes from the Ramayana and the Puranic legends. Adjacent to the palace is the Jewish Synagogue (closed on Fridays & Saturdays) built in 1568. Also visit the St. Francis Church (closed on Sundays), established by the Portuguese Franciscan friars in 1503. Vasco Da Gama was buried in the courtyard of this European church built in India. Other attractions include the traditional fishing hamlets and the fisher folk in their colorful costumes. The tour also includes a visit to the seaside where one can still see the, nearly a century old Chinese fishing nets, which, are still in use. This Evening, attend a Kathakali dance performance at a local theatre, performed by various artists. Kathakali is a traditional dance form, depicting Indian epics (Ramayana and Mahabharata). The dancers are dressed in very colorful and elaborate costumes. Their faces are painted to depict various characters of these epics. This dance has a lot of facial expressions and brisk, yet articulate body movements.Return to the Hotel for an overnight stay. (D)
+ 
+
+
+
+
+
+
+<p><b>Day 2: Day 2: Cochin – Periyar</b></p>
+
+Breakfast at the Hotel.After Breakfast Proceed to Periyar (160 KM / 4 hrs.) Arrive Periyar and Check in at the Hotel.An evening boat cruise is the best mode to watch the wildlife from a close distance at the Periyar Wildlife Sanctuary. The Periyar Lake is one of the most popular tourist attractions in the area. Elephants are the most common wildlife you can see on the shores of the reservoir. Apart from elephants, the sighting of wild boar and sambar deer is also possible. Return to the Hotel for an overnight stay. (B, D)
+
+
+
+
+
+
+
+
+
+
+
+<p><b>Day 3: Periyar</b></p>
+
+Breakfast at the Hotel.Morning visit Spice plantations which is famous for nature walking. You can also spot many unique birds that visit the plantation for food. You can taste fresh spices from the plant. Some plantations provide a tasting lunch in which the food is cooked with the fresh spice from the plantation. The plantation will be divided into sections and each section will be covered with specific plants like vanilla, ginger, cardamom, clove, nutmeg and others. Return to the Hotel. Afternoon at leisure. Overnight at the Hotel. (B, D)
+
+
+
+ 
+
+
+
+
+
+
+
+
+<p><b>Day 4: Periyar - Alleppey</b></p>
+
+Breakfast at the Hotel After Breakfast proceed to Allepphey(130 KM / 4 Hrs). Arrive Alleppey and check in at the House Boat. Enjoy the scenes of the Kerala countryside in a backwater cruise -skim past Chinese fishing nets, bowed down paddy fields, local inhabitants engaged in making coir products, rustic homes and swaying coconut palms. The Boat will be anchored at 5.30 PM. Overnight at the House boat. (B, L, D)
+
+
+
+
+
+
+
+
+
+
+
+<p><b>Day 5: Cochin – Delhi</b></p>
+
+Breakfast at the house boat.After Breakfast check out and proceed to Cochin Airport. Arrive Delhi check in at the Hotel for an overnight stay. (B, D)
+
+
+
+
+<p><b>Day 6: Depart Delhi</b></p> 
+
+Breakfast at the Hotel.After Breakfast check out from the Hotel. Your wonderful vacation comes to an end! Proceed to Delhi International Airport to connect to your onward flight, with wonderful memories to be cherished for a lifetime. (B)
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Deluxe</th>
+    
+  </tr>
+
+  <tr>
+    <td>Alleppey, Kerala, India</td>
+    <td>HOUSE BOAT</td>
+    
+
+    </tr>
+
+    <tr>
+    <td>Cochin, Kerala, India</td>
+    <td>CASINO HOTEL</td>
+    
+
+    </tr>
+    <tr>
+    <td>Delhi, India</td>
+    <td>JAYPEE VASANT CONTINENTAL</td>
+    
+
+    </tr>
+
+    <tr>
+      <td>Thekkady, Kerala, India</td>
+      <td>MOUNTAIN COURTYARD</td>
+    </tr>   
+    
+</table>
+
+  </div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+  <table>
+    <tr>
+      <th>Hotel</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Twin ( Min. 2 Adults )</th>
+      <th>Twin ( Min. 4 Adults )</th>
+      <th>Single</th>
+    </tr>
+
+    <tr>
+      <td>Deluxe</td>
+      <td>01 Oct 2018</td>
+      <td>31 Mar 2019</td>
+      <td>43280</td>
+      <td>36450</td>
+      <td>65770</td>
+    </tr>
+  </table>
+
+  </div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  
+  <li>5 Nights’ accommodation on twin / double sharing basis in 4 star and Heritage  Hotels</li><br>
+  <li>Breakfast and Dinner Daily(As per itinerary)</li><br>
+  <li>Breakfast, Lunch and dinner on House boat</li><br>
+  <li>All sightseeing, excursions as mentioned in the itinerary by air conditioned Vehicle</li><br>
+  <li>Government Service Taxes, Toll Taxes, City Taxes and Driver Allowances</li><br>
+  <li>English Speaking Guide (For respective destination during sightseeing, wherever applicable)</li><br>
+  <li>Entrance fees at monuments</li>
+  
+  
+<h3>Exclusions</h3>
+  
+  <li>Tips, drinks, laundry, telephone calls and all other items of a personal nature</li><br>
+  <li>Any International / Domestic Airfare</li><br>
+  <li>Train fare</li><br>
+  <li>Visa fees or any personal insurance</li><br>
+  <li>Porterage</li><br>
+  <li>Anything not included in above itinerary / Inclusions</li>
+   </div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>Meals on arrival and departure days is subject to flight timing</li>
+  <li>Supplementary cost will be applicable if the travel date is during national holidays, festivals, Long weekends and New Year</li>
+  <li>Rates are subject to change in case of   any changes in rate of exchange, Govt. taxes etc</li>
+  <li>In case of Hotel unavailability similar category hotel will be provided</li>
+  <li>Transportation not on disposable basis</li>
+  <li>No refund for any unused service or meals</li>
+  <li>Sakshi Travels reserves the right to change/modify the offer any time without any prior notice.</li>
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

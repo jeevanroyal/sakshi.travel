@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+} 
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;  
+}
+
+/* Create an active/current "tab button" class */    
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+  </div>
+
+
+  <div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Serene Kerala\Serene kerala-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Serene Kerala\Serene kerala-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Serene Kerala\Serene kerala-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Serene Kerala\Serene kerala-4.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");             
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">    
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Cochin (arrival)</b></p>
+
+Arrival at Cochin Airport and get transferred towards the hotel. Check in at the hotel and take rest. The day is free at leisure so plan your day accordingly. Overnight stay at hotel in Cochin. (D)
+ 
+
+
+
+<p><b>Day 2: Cochin Local Sightseeing</b></p>
+
+After breakfast, you visit the Dutch Palace-built by the Portuguese in 1557 and subsequently renovated by the Dutch after 1663. The murals are perhaps the best in India. Jewish Synagogue - built in 1568 and the oldest Synagogue in the Commonwealth are at Mattancherry. St. Francis Church - built in 1510 and the oldest European church in India, Chinese Fishing Nets- introduced by the court of Kublai Khan can be seen in Fort Cochin. Visit Fort Cochin Beach. Evening back to the hotel and overnight. (B, D)
+
+
+<p><b>Day 3: Cochin - Munnar (150 Km/ 04 Hrs)</b></p>
+
+Arrival at Cochin and transfer to Munnar. Munnar is 1800 mts above sea level and also the home of South India’s highest peak (Anamudi-2695 mts). On the way to Munnar visit Vaplara, Cheeyappara waterfalls and Tea Plantations. Upon arrival at Munnar transfer to Hotel and check in at the Hotel. Afternoon visit Rajamala (Eravikulam National Park - open as per the directions by the forest authorities), the best place to see Nilgiri Tahr (Hermitragus Hilarious)- the mountain goat of South India. You may visit the Tea Museum surrounded by tea Gardens- the only Museum of its kind; which illustrates the timeworn method of Tea production. Evening have a short visit at Munnar town. Overnight stay at Munnar. (B, D)
+
+
+
+
+
+
+
+<p><b>Day 4: Munnar Local Sightseeing</b></p>
+
+After breakfast proceed for sightseeing of Munnar. Mattupetty dam, Echo Point, Kundala Dam, Pothenmedu View Point, Blossom Park etc are some of the highlights of the sightseeing.
+Mattupetty Dam, near Munnar in Idukki District, is a storage Concrete Gravity dam built in the mountains of Kerala, India to conserve water for hydroelectricity. It has been a vital source of power.
+Echo point is a very beautiful place in Munnar, which got its name from natural echo phenomenon situated at a scenic lake bank. When you call out loudly at this point you will be hear your voice echoing back returning to you. Kundala is a picturesque place, about 20 km from Munnar on the way to Top Station. It is at a height of 1700 meters above sea level.Located at a distance of 4.5 kms from Munnar, the Pothamedu View Point has a majestic beauty attached to it. The coffee, tea and cardamom plantation located at the Pothamedu View Point appears like a bouquet of nature’s scenic beauty. Overnight stay at Munnar. (B, D)
+
+
+
+
+<p><b>Day 5: Munnar - Thekkady / Periyar (110km/ 3.5 Hrs)</b></p>
+
+After breakfast, checkout and transfer to Thekkady. Drive through one of those most picturesque hill highways of Kerala. Thekkady, also known as Periyar is a world famous wildlife sanctuary and one of the 48 Tiger reserves in India . On arrival check in at the hotel. Afternoon proceed for 1½-hour game viewing cruise around the Periyar Lake which is the main way to tour the sanctuary. Here you will be able to see a large variety of wildlife, which include elephants, monkeys, deer, wild boar etc. Overnight stay at Thekkady. (B, D)
+
+
+
+<p><b>Day 6: Thekkady – Kumarakom (130km/ 3.5hrs)</b></p>
+
+After breakfast, you will be transferred to Kumarakom by road. After reaching Kumarakom you will do local sightseeing. Kumarakom is a place surrounded by many islands of Vembanad Lake. It’s filled with natural pulchritude and ambience which is matchless in every sense. We will take you to Kumarakom Bird Sanctuary. Get soaked into the natural beauty as you see all colours of birds painted with painstakingly work by God himself! The species of beauty found are so beautiful that you won’t feel like leaving the place. Your next destination will St. Mary’s Church, built by Thekkumkoor Maharajah in the year 1579, it’s a perfect architectural blend of Kerala and Portuguese style – an awe to look at. – The Basalica theme, beautiful murals and the Golthic paintings! The next place is Bay Island Drift Museum. It’s the place which showcases a large collection of superior driftwood articles – unique in their own sense. After finishing the tour check in at room for overnight stay at hotel in Kumarakom. (B, D)
+
+
+
+<p><b>Day 7: Kumarakom - Alleppey Houseboat (35km/ 1hr)</b></p>
+
+After breakfast check out from the hotel and transfer to Alleppey. Around 1200 hrs check in at the houseboat and start your cruise through the rich and splendid backwaters. Just relax at the deluxe houseboat. It will be a unique and exclusive experience of your lifetime. You will be cruising along the village shores and paddy fields witnessing the core life of the Kerala villages for the whole day. The house boat is fully furnished with bedrooms and a kitchen. Dinner and overnight at the houseboat. (B, L, D)
+
+<p><b>Day 8: Alleppey - Kovalam (160 Km/ 4.5 Hrs)</b></p>
+
+Alleppey - Kovalam - After breakfast check out from the hotel / houseboat and transfer to Kovalam. Check in at Hotel. Kovalam is an evergreen and pleasant climatic beach resort and is a dreamland for tourists from all over the world. With a high rock promontory and a calm bay of blue waters, this beach paradise resembles a unique aquarelle on moonlit nights. Kovalam was brought to the public eye by the Maharaja of Travancore. Over the past three decades, the place has been well developed, and now figures prominently on the world tourism map. The warm and clean atmosphere by the coconut trees and the white sandbed are perfect for relaxing holidays, as the sea breeze gently plays with the rhythmic waves. Relax at the hotel and overnight stay. (B, D)
+
+<p><b>Day 9: Kovalam – Kanyakumari Day Tour</b></p>
+
+Soon after enjoying a delicious meal, embark on a tour to another exotic South Indian destination – Kanyakumari. Famous for offering mesmerizing views of the sunrise and sunset, Kanyakumari is among the most sought-after holiday retreats. The most famed tourist site of this city is undoubtedly its virgin beaches like Muttom and Chothavilai. Other prominent attractions of the city include the Thiruvalluvar Statue and Vivekananda Rock Memorial. After spending the entire day exploring this wonderful place, return to Kovalam by late evening and stay overnight at the hotel. (B, D)
+
+<p><b>Day 10: Kovalam – Thiruvananthapuram (20 Km/ 1Hr)</b></p>
+
+You will be picked up from your hotel in an air-conditioned vehicle as you go sightseeing in Thiruvananthapuram. You will visit the following - Sri Padmanabhaswamy Temple, 260-year old temple that has a Gopuram (gatehouse tower) that rises 30 meters in the sky and intricately carved pillars which are beautiful. Nepier Museum - an art and natural history museum which houses a collection of archaeological and historic artifacts, bronze idols, ancient ornaments, a temple chariot and ivory carvings. Chitralayam Art Gallery, displaying works by renowned painters Raja Ravi Varma and Nicholas Roerich as well as examples of Mughal and Tanjore art. Sri Moolamthirunal Shasti Purthi Memorial (State Handicraft Institute), admire fine samples of handicrafts over here. After your sightseeing tour, you will check out hotel for overnight stay in Thiruvananthapuram. (B, D)
+
+<p><b>Day 11: Depart Thiruvananthapuram</b></p>
+
+This morning enjoy your breakfast at resort later check out Hotel and drive to Thiruvananthapuram Airport to connect to your onward flight, with wonderful memories to be cherished for a lifetime. Your wonderful vacation comes to an end! (B)
+ 
+
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Deluxe</th>
+    
+  </tr>
+
+  <tr>
+    <td>Alleppey, Kerala, India</td>
+    <td>HOUSE BOAT</td>
+    
+
+    </tr>
+
+    <tr>
+    <td>Cochin, Kerala, India</td>
+    <td>CASINO HOTEL</td>
+    
+
+    </tr>
+
+    <tr>
+      <td>Kovalam, Kerala, India</td>
+      <td>UDAY SAMUDRA HOTEL</td>
+    </tr>
+
+    <tr>
+      <td>Kumarakom, Kerala, India</td>
+      <td>PARADISE RESORT</td>
+    </tr>
+
+     <tr>
+      <td>Munnar, Kerala, India</td>
+      <td>MOUNTAIN CLUB RESORT</td>
+    </tr>
+
+    <tr>
+      <td>Thekkady, Kerala, India</td>
+      <td>MOUNTAIN COURTYARD</td>
+    </tr>
+
+     <tr>
+      <td>Trivandrum, Kerala, India</td>
+      <td>FORTUNE HOTEL THE SOUTH PARK</td>
+    </tr>
+
+    
+    
+</table>
+
+  </div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+  <table>
+    <tr>
+      <th>Hotel</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Twin ( Min. 2 Adults )</th>
+      <th>Twin ( Min. 4 Adults )</th>
+      <th>Single</th>
+  
+    </tr>
+
+    <tr>
+      <td>Deluxe</td>
+      <td>01 Oct 2018</td>
+      <td>31 Mar 2019</td>
+      <td>120770</td>
+      <td>92820</td>
+      <td>162370  </td>
+    </tr>
+  </table>
+
+  </div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  
+  <li>10 Nights’ accommodation on twin / single sharing basis in 4 star and Heritage Hotels </li><br>
+  <li>Breakfast and Dinner Daily (As per itinerary)</li><br>
+  <li>Breakfast, Lunch & dinner on House boat</li><br>
+  <li>All sightseeing, excursions as mentioned in the itinerary by air conditioned Vehicle  </li><br>
+  <li>Government Service Taxes, Toll Taxes, City Taxes and Driver Allowances  </li><br>
+  <li>English Speaking Guide (For respective destination during sightseeing, wherever applicable)</li><br>
+  <li>Entrance fees at monuments</li>
+  
+  
+<h3>Exclusions</h3>
+  
+  <li>Tips, drinks, laundry, telephone calls and all other items of a personal nature</li><br>
+  <li>Any International / Domestic Airfare</li><br>
+  <li>Train fare </li><br>
+  <li>Visa fees or any personal insurance </li><br>
+  <li>Porterage</li><br>
+  <li>Anything not included in above itinerary / Inclusions </li>
+  
+   </div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>Meals on arrival and departure days is subject to flight timing</li>
+  <li>Supplementary cost will be applicable if the travel date is during national holidays, festivals, Long weekends and New Year</li>
+  <li>Rates are subject to change in case of   any changes in rate of exchange, Govt. taxes etc</li>
+  <li>In case of Hotel unavailability similar category hotel will be provided</li>
+  <li>Transportation not on disposable basis</li>
+  <li>No refund for any unused service or meals</li>
+  <li>Sakshi Travels INC… reserves the right to change/modify the offer any time without any prior notice.</li>
+
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

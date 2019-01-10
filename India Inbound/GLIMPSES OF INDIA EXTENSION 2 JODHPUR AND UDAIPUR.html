@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+} 
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;  
+}
+
+/* Create an active/current "tab button" class */    
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+  </div>
+
+
+  <div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Jodhpur\Jodhpur-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Jodhpur\Jodhpur-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Jodhpur\Jodhpur-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Jodhpur\Jodhpur-4.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");             
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">    
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Delhi - Jodhpur</b></p>
+
+Breakfast at the Hotel. After Breakfast transfer to the Airport and Depart. Arrive Jodhpur and Transfer to the hotel and check in upon arrival.Afternoon, set out on a sightseeing tour of Jodhpur. Visit the Mehrangarh Fort, situated on a low sand stone hill, founded by Rao Jodha in 1459 when he moved his capital from nearby Mandore. There are palaces housed within this daunting structure among which are Moti Mahal and Phool Mahal. Visit the JaswantThada, a Cenotaph built in 1899, in memory of Maharaja Jaswant Singh II. This imposing marble memorial is constructed with thin marble sheets that allow sunlight to filter in. Later visit the museum located in the Umaid Bhawan Palace. Return to the hotel and overnight. (D)
+
+
+
+<p><b>Day 2: Jodhpur - Udaipur (260 KM / 6 Hrs.)</b></p>
+
+Early Breakfast at the Hotel. After Breakfast Proceed to Udaipur enroute visiting Ranakpur. Ranakpur, located 90 kms from Udaipur is famous for its Jain Temple dating back to the 15th century. Its 29 halls are supported by 1444 pillars, none of which are alike. The temple abounds with intricate friezes and sculptures. Arrive Udaipur and check in at the hotel. Evening Boat Ride on Lake Pichola.Pichola Lake is one of the most beautiful and picturesque lakes in Rajasthan, India. Located in the heart of the city, Pichola Lake is the oldest and one of the largest lakes of Udaipur. In 1362, the beautiful lake was built by PichhuBanjara during the ruling period of MaharanaLakha. The lake extends 3 miles in length, 2 miles in width and has depth of 30 feet. Return to the hotel and overnight. (B, D)
+
+
+
+<p><b>Day 3: In Udaipur</b></p>
+
+Breakfast at the Hotel. In the morning, set out on an excursion to Eklingji and Nagda, 22 kms from Udaipur. These temples are dedicated to Lord Shiva. The walled complex includes an elaborately pillared hall under a large pyramidal roof and features a four-faced Shiva image of black marble. Nagda, a complex of three temples, now in ruins, was the scene of frequent Muslim invasions. This afternoon, proceed on a sightseeing tour of Udaipur. Begin your tour with a visit to the City Palace. At this Palace complex, marvel at the rooms with mirrored walls and ivory doors, the windows with coloured glass, the inlaid marble balconies and the peacock courtyard. Also visit the lovely Sahelion-ki-bari gardens, the Jagdish temple and the local Museum.Return to the Hotel and Overnight. (B, D)
+
+
+
+<p><b>Day 4: Udaipur - Delhi</b></p>
+
+Breakfast at the Hotel. After Breakfast Proceed to the Airport for your flight to Delhi. Arrive Delhi. Check in at hotel for an overnight stay. (B, D)
+
+
+
+<p><b>Day 5: Depart Delhi</b></p>
+
+Breakfast at the Hotel. After Breakfast check out from the hotel. Your wonderful vacation comes to an end! Proceed to Delhi International Airport to connect to your onward flight, with wonderful memories to be cherished for a lifetime. (B)
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Deluxe</th>
+    
+  </tr>
+
+  <tr>
+    <td>Jodhpur, Rajasthan, India</td>
+    <td>Ranbanka</td>
+    
+
+    </tr>
+
+    <tr>
+    <td>Udaipur, Rajasthan, India</td>
+    <td>FatehNiwas</td>
+    
+
+    </tr>
+    
+    
+</table>
+
+  </div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+  <table>
+    <tr>
+      <th>Hotel</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Twin ( Min. 2 Adults )</th>
+      <th>Twin ( Min. 4 Adults )</th>
+      <th>Single</th>
+    </tr>
+
+    <tr>
+      <td>Deluxe</td>
+      <td>01 Oct 2018</td>
+      <td>31 Mar 2019</td>
+      <td>48040</td>
+      <td>37960</td>
+      <td>64100</td>
+    </tr>
+  </table>
+
+  </div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  
+  <li>4 Nights’ accommodation on twin / single sharing basis in 4 star and Heritage Hotels </li><br>
+  <li>Breakfast and Dinner Daily (As per itinerary)</li><br>
+  <li>All sightseeing, excursions as mentioned in the itinerary by air conditioned Vehicle  </li><br>
+  <li>Government Service Taxes, Toll Taxes, City Taxes and Driver Allowances  </li><br>
+  <li>English Speaking Guide (For respective destination during sightseeing, wherever applicable)</li><br>
+  <li>Entrance fees at monuments</li>
+  
+  
+<h3>Exclusions</h3>
+  
+  <li>Tips, drinks, laundry, telephone calls and all other items of a personal nature</li><br>
+  <li>Any International / Domestic Airfare</li><br>
+  <li>Train fare </li><br>
+  <li>Visa fees or any personal insurance </li><br>
+  <li>Porterage</li><br>
+  <li>Anything not included in above itinerary / Inclusions </li>
+  
+   </div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>Meals on arrival and departure days is subject to flight timing</li>
+  <li>Supplementary cost will be applicable if the travel date is during national holidays, festivals, Long weekends and New Year</li>
+  <li>Rates are subject to change in case of   any changes in rate of exchange, Govt. taxes etc</li>
+  <li>In case of Hotel unavailability similar category hotel will be provided</li>
+  <li>Transportation not on disposable basis</li>
+  <li>No refund for any unused service or meals</li>
+  <li>Sakshi Travels reserves the right to change/modify the offer any </li>
+  <li>Time without any prior notice.</li>
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

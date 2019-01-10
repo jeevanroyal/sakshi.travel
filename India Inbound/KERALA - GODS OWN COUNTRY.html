@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+</div>
+
+<div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Kerala\kerala-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Kerala\kerala-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Kerala\kerala-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Kerala\kerala-1.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrival at Calicut /Kozhikode</b></p>
+On arrival you will be met by our Airport representative and transfered to the Hotel. Check in at the Hotel (Check in Mid-Day) Afternoon  proceed for a half-day sightseeing where you will cover Mananchira containing the palace tank transformed into an architectural marvel, Marine Life Aquarium, the jetties at Kozhikode beach. Last visit of the day will be Kappad, the very place from which Vasco da Gama entered India. Return to the Hotel.Overnight at hotel.
+<p><b>Day 2: Calicut - Wayanad</b></p>
+Breakfast at the Hotel.After breakfast leave by road to Wayanad - the green paradise is nestled among the mountains of the Western Ghats, forming the border world of the greener part of Kerala. Clean and pristine, enchanting and hypnotizing, this land is filled with history and culture.Arrival at hotel.Check in at the Hotel. Late afternoon proceed for a safari at Wildlife sanctuary - the Wayanad Wildlife Sanctuary is contiguous to the protected area network of Nagarhole and Bandipur of Karnataka on the northeast and Mudumalai of Tamil Nadu on the southeast. The sanctuary is rich in flora and fauna. The management lays emphasis on scientific conservation with due consideration for the general lifestyle of the tribal and others who live in and around the forest. Elephant, deer. Wild gaur (Indian Bison), tiger, leopard, sloth bear etc. can be spotted here. Return to the Hotel.Overnight at Resort
+
+<p><b>Day 3: Wayanad</b></p>
+Breakfast at the Hotel.After breakfast, sightseeing tour of Wayanad. Visit the placid Lake Pookot- a freshwater lake where the visitors can enjoy boat riding, amid fresh air and green ambiance. Next, you visit the three-tiered Soojipara waterfalls that is also known as Sentinel Rock Waterfalls. Banasura Sagar dam the largest dam of India which is also the second largest earth dam in Asia. The surroundings of the dam is tranquil and breathtaking. Continuing the tour, visit the very popular Edakkal Caves- these are 2 natural caves known to be 7000 years old. It is believed that these caves are one of the earliest centers of human habitation. Return to the Hotel.Overnight at the Hotel
+<p><b>Day 4: Wayanad to Thalassery</b></p>
+Breakfast at the Hotel.After breakfast leave by road to Thalasseri. Arrive and check in to the famous Homestay Ayisha Manzil. Ayisha Manzil is truly a manzil (a destination - in Hindi),This homestay has been blissful to be rightfully located in the palm fringed Kerala; the most generous piece of land with lush greeneries and blue waters, emphatically called as God’s own country. Afternoon, sightseeing where you can explore the narrated Spice Market which has great historical significance as it was the spice trade that created lure for the English to come to Kerala. Moreover, Thalassery has been the famous spice trading centre in Kerala.Visit to Handloom weaving unit is an opportunity to the learn how the clothes are woven in the old metho.Later we have a look into the local Beedi rolling Units This is an interesting practice to watch. In the Evenings, during the period of October to April we can witness They yam - A temple art form of Northern Kerala in the nearby temple. They yam is an 800-year old celebration of divinity and devotion in the northern Malabar region of Kerala. They yam is a mélange of dance, drama, music and mime.The ceremonious dance is accompanied by the chorus of such musical instruments as Chenda, Elathalam, Kurumkuzhal and Veekkuchenda. Return &  Dinner and overnight at Homestay.
+<p><b>Day 5: Thalassery - Nileshwaram</b></p>
+Breakfast at the Hotel .After breakfast leave by road to Nileshwaram. As you reach Nileshwaram, Arrive & check-in at the hotels. Afternoon proceed for a temple tour of the town. The major tourist attractions of Nileshwaram include Sri Vettakkorumakan temple, Suvarnavalli Vishnu temple etc . In the evening visit the Bekal Fort to watch the beautiful sunset..Enjoy dinner and overnight stay at the hotel.
+<p><b>Day 6: Nileshwaram</b></p>
+Breakfast at the Hotel. After breakfast day at leisure to enjoy the Ayurveda rejuvenation therapy or Spa . Afternoon enjoy the boat cruise through the backwaters of Nileshwaram is a typical Kerala style experience. The backwaters here are not as extensive as Alleppey, however they are still unexplored and quaint, therefore recommended for honeymooners, nature centric and off-beat travellers. OR you can enjoy the trekking at Ranipuram, popularly known as the ‘Ooty of Kerala’ and previously called Madathumala. It is an offbeat trekking destination, which is sparsely populated and provides panoramic views as you walk across misty, lush green grasslands. Due to the length of the trail, Ranipuram makes for a perfect one-day getaway. Evening return to hotel for  overnight.
+<p><b>Day 7: Neeleswaram – Hassan</b></p>
+Early Breakfast at the Hotel .After Breakfast proceed to Hassan. Arrive Hassan Check in at the Hotel.Afternoon Proceed for a sightseeing tour of Belur and Halebid, which, are one of the finest examples of Hoysala Art.  The soft stone used by builders was chiseled with extreme fineness for the smallest of detail. The temple at Belur is famed for its profusely ornamented exterior and the one at Halebid for its sculptured figures and an open air museum.Return to the hotel for overnight
+<p><b>Day 8: Hassan – Mysore</b></p>
+Arrive Mysore.Check in at the Hotel.Afternoon, proceed for a sightseeing tour of Mysore. Up on a hill overlooking the city is the temple to Chamundeswari, its patron goddess. The major tourist attraction is the “Mysore Palace”, the beautiful profile of this walled Indo-Saracenic Palace, the seat of the Maharajas of Mysore, graces the city skyline, rebuilt in 1912. The Mysore Arts and Crafts Centre is famous for its fine craftsmanship in wood, ivory, sandalwood and silk.  The tour also includes a visit to the Zoological Gardens and the St. Philomena’s church, one of the largest churches in the country, built in the Victorian Gothic style. Return to the Hotel and Overnight
+<p><b>Day 9: Mysore – Bangalore</b></p>
+Breakfast at the Hotel.Your wonderful vacation comes to an end!After breakfast Proceed to Bangalore International Airport to connect to your onward flight, with wonderful memories to be cherished for a lifetime.
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Deluxe</th>
+        
+  </tr>
+  <tr>
+    <td>Calicut ,Kerala ,India</td>
+    <td>Kadavu Resort or similar</td>
+    </tr>
+  <tr>
+    <td>Hassan ,Karnataka ,India</td>
+    <td>Hoysala village Resort or similar</td>
+    </tr>
+  <tr>
+    <td>Mysore ,Karnataka ,India</td>
+    <td>Royal Orchid Metropole or similar</td>
+  </tr>
+  <tr>
+    <td>Neeleswaram ,Kerala ,India</td>
+    <td>Neeleshwar Hermitage or similar</td>
+  </tr>
+  <tr>
+    <td>Thalassery ,Kerala ,India</td>
+    <td>Ayisha Manzil or similar</td>
+  </tr>
+  <tr>
+    <td>Wayanad ,Kerala ,India</td>
+    <td>Vythiri Resort or similar</td>
+  </tr>
+   
+      
+</table>
+  
+ 
+  
+</div>
+<div id="Price" class="tabcontent">
+  <h3>Price</h3>
+  
+<table>
+  <tr>
+    <th>Hotel </th>
+    <th>Start Date  </th>
+    <th>End Date</th>
+    <th>Twin ( Min. 2 Adults )</th>
+    <th>Twin ( Min. 4 Adults )</th>
+    <th>Single</th>
+    
+    
+       
+  </tr>
+  
+  
+   <tr>
+    <td>Deluxe</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>85870</td>
+    <td>76570</td>
+    <td>129890</td>
+    
+    
+    
+           
+  </tr>
+  
+  
+</table>
+</div>
+
+
+</div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  <li>08 Nights’ accommodation as per the Hotel given above net per person non twin sharing on room with Breakfast & dinner at all the places accept at vythiri Resort & Ayish Manzil it is on all meals</li><br>
+  <li>on Bed & Breakfast basis</li>
+  <li>Meeting and assistance at airport by our representative. </li><br>
+  <li>Arrival & Departure transfer by Air-condition small car. </li><br>
+  <li>Sightseeing tours by Air-condition small car with English speaking guide & entrance fees as per the Itinerary </li><br>
+  <li>Presently applicable taxes.</li><br>
+   
+ 
+</ul>
+<h3>Exclusions</h3>
+<ul>
+  <li>Sightseeing except the above mentioned places </li><br>
+  <li>Any kind of insurance.</li><br>
+  <li>Airfare / Rail fare</li><br>
+  <li>Visa Charges </li><br>
+  <li>Expenses of personal nature such as laundry bills, bar bills, telephone bills, tipping, porterage at airports/hotels.</li><br>
+  <li>Camera/video camera fees & museum fees (if any). </li><br>
+  <li>Any other services which are not included in the above cost. </li><br>
+  <li>Any Kind of Drinks (Alcoholic, Mineral, Aerated) </li><br>
+  <li>The service of Vehicles is not included on leisure days & after completing the sightseeing tour as per the itinerary.</li><br>
+  <li>GST @ 5% currently as applicable </li><br>
+</ul>
+</div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>The prices are valid for travel from 1st October 2018 to 31st March 2019</li><br>
+  <li>High season surcharges will be applicable</li><br>
+  <li>Prices are subject to change without prior notice</li><br>
+  <li>Rooms/Seats are subject to availability at the time of booking</li><br>
+  <li>Vehicle will be not at disposal. If guest wish to go for additional sightseeing extra charges will be applicable</li><br>
+  <li>Please carry original ID Proof (Voter ID card /Passport/Driving License) etc. for security purpose and hotel policy</li><br>
+  <li>Cancellation charges applicable as per company policy</li><br>
+  <li>In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised</li><br>
+  <li>We will not be liable for claims or expenses arising from circumstances beyond our control such as accidents, injuries delayed or cancelled flights & acts or forces of nature</li><br>
+  
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

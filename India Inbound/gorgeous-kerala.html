@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+</div>
+
+<div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\India Inbound\gorgeous Kerala\kerala-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\gorgeous Kerala\kerala-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\gorgeous Kerala\kerala-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\gorgeous Kerala\kerala-1.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrive Cochin</b></p>
+On arrival you will met by our representative at the airport and transfer to the hotel. Check in at the Hotel. Afternoon, proceed for the sightseeing tour of Cochin. The tour begins from “The Dutch Palace (closed on Fridays)” also known as Mattancherry Palace, built by Portugues in 1555, which is famous for its murals depicting scenes from the Ramayana and the puranic legends. Adjacent to the palace is the Jewish Synagogue (closed on Fridays & Saturdays) built in 1568. Also visit the St. Francis Church (closed on Sundays), established by the Portuguese Franciscan friars in 1503. Vasco Da Gama was buried in the courtyard of this European church built in India. Other attractions include the traditional fishing hamlets and the fisher folk in their colorful costumes. The tour also includes a visit to the seaside where one can still see the, nearly a century old Chinese fishing nets, which, are still in use.  Evening, witness a Kathakali dance performance at a local theatre, performed by various artists. Kathakali is a traditional dance form, depicting Indian epics (Ramayana and Mahabharata). The dancers are dressed in very colorful and elaborate costumes. Their faces are painted to depict various characters of these epics. This dance has a lot of facial expressions and brisk, yet articulate body movements. Return to the Hotel & Overnight.
+<p><b>Day 2: Cochin - Periyar</b></p>
+
+Breakfast at the Hotel. After Breakfast Proceed to Periyar (160 KM / 4 Hrs.) Arrive Periyar & Check in at the Hotel. Evening boat cruise is the best mode in Periyar Wildlife Sanctuary to watch the wildlife from a close distance. The Periyar Lake is one of the most popular tourist attractions in the area. Elephants are the most common wildlife you can see on the shores of the reservoir. Apart from Elephants, the sight of Wild Boar and Sambar Deer is also possible.  Return to the Hotel & Overnight.<br><br>
+
+<p><b>Day 3: Periyar - Sightseeing</b></p>
+
+Breakfast at the Hotel. Morning visit Spice plantations which is famous for nature walking. You can also spot many unique birds that visit the plantation for food. You can taste fresh spices from the plant. Some plantations provide a tasting lunch in which the food is cooked with the fresh spice from the plantation. The plantation will be divided into sections and each section will be covered with specific plants like vanilla, ginger, cardamom, clove, nutmeg and others. Return to the Hotel. Afternoon at leisure. Overnight at the Hotel.<p><b>Day 4: Periyar – Alleppey</b></p>
+Breakfast at the Hotel. After Breakfast proceed to Alleppey (130 KM / 4 Hrs.) Arrive Alleppey and check in at the House Boat. Lunch will be provided in Houseboat. Enjoy the scenes in Kerala country side in a backwater cruise -skim past Chinese fishing nets, bowed down paddy fields, local inhabitants engaged in making coir products, rustic homes and swaying coconut palms. The Boat will be anchor at 5.30 PM Dinner in Houseboat. Overnight at the House boat. (All Meals will be served at the House boat)
+<p><b>Day 5: Alleppey – Kovalam</b></p>
+
+Breakfast at the house boat.  After Breakfast check out and proceed to Kovalam (160 KM. / 5 Hrs.) Arrive Kovalam, Check in at the hotel. Afternoon Sightseeing of Trivandrum visiting Padmanabha Swamy Temple: SriPadmanabha Swamy Temple sits in the heart of the city of Trivandrum. The residing deity of this temple is Lord Vishnu. The temple is managed by the former royal family of Travancore. The temple is designed beautifully in the Dravidian style. Napier Museum, Chitira Art Gallery: Both Napier Museum and Sree Chithra Art Gallery are situated in the Museum compound, right in the heart of the city, near the zoological park. Napier Museum built in the 19th century, this Indo-Saracenic structure boasts a natural air-conditioning system and houses a rare collection of archaeological and historic artefacts, bronze idols, ancient ornaments, a temple chariot and ivory carvings. Kovalam Beach: Kovalam is an internationally renowned beach with three adjacent crescent beaches. It has been a favourite haunt of tourists, especially Europeans, since the 1930s. A massive rocky promontory on the beach has created a beautiful bay of calm waters ideal for sea bathing. Return to the Hotel & Overnight.
+
+
+
+
+<p><b>Day 6: Kovalam</b></p>
+
+Breakfast at the Hotel. Full day at leisure for the Individual activities. Overnight at the Hotel.
+<p><b>Day 7: Depart Trivandrum</b></p>
+
+Breakfast at the Hotel and depart for onward destination.
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Deluxe</th>
+        
+  </tr>
+  <tr>
+    <td>Alleppey</td>
+    <td>House Boat or similar</td>
+    </tr>
+  <tr>
+    <td>Cochin</td>
+    <td>Travancore Court By Spree or similar</td>
+  </tr>
+  <tr>
+    <td>Kovalam</td>
+    <td>Sagara Beach Resort or similar</td>
+    </tr>
+  <tr>
+    <td>Periyar</td>
+    <td>Mountain Courtyard or similar</td>
+  </tr>
+  
+      
+</table>
+  
+ 
+  
+</div>
+<div id="Price" class="tabcontent">
+  <h3>Price</h3>
+  
+<table>
+  <tr>
+    <th>Hotel </th>
+    <th>Start Date  </th>
+    <th>End Date</th>
+    <th>Twin ( Min. 2 Adults )</th>
+    
+       
+  </tr>
+  
+  
+   <tr>
+    <td>Deluxe</td>
+    <td>01 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>29595</td>
+    
+    
+           
+  </tr>
+  
+  
+</table>
+</div>
+
+
+</div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  <li>06 Nights’ accommodation as per the Hotel given above net per person on twin sharing Bed & Breakfast basis.</li><br>
+  <li>Meeting and assistance at airport by our representative. </li><br>
+  <li>Arrival & Departure transfer by Air-condition small car. </li><br>
+  <li>Sightseeing tours by Air-condition small car with English speaking guide & entrance fees as per the Itinerary </li><br>
+  <li>Witness the Kathkali dance performance in Cochin</li><br>
+  <li>Presently applicable taxes.</li><br>
+ 
+</ul>
+<h3>Exclusions</h3>
+<ul>
+  <li>Sightseeing except the above mentioned places </li><br>
+  <li>Any kind of insurance.</li><br>
+  <li>Airfare / Rail fare</li><br>
+  <li>Visa Charges </li><br>
+  <li>Expenses of personal nature such as laundry bills, bar bills, telephone bills, tipping, porterage at airports/hotels.</li><br>
+  <li>Camera/video camera fees & museum fees (if any). </li><br>
+  <li>Any other services which are not included in the above cost. </li><br>
+  <li>Any Kind of Drinks (Alcoholic, Mineral, Aerated) </li><br>
+  <li>The service of Vehicles is not included on leisure days & after completing the sightseeing tour as per the itinerary.</li><br>
+  <li>GST @ 5% currently as applicable </li><br>
+</ul>
+</div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>The prices are valid for travel till 30th September 2018</li><br>
+  <li>High season surcharges will be applicable</li><br>
+  <li>Prices are subject to change without prior notice</li><br>
+  <li>Rooms/Seats are subject to availability at the time of booking</li><br>
+  <li>Vehicle will be not at disposal. If guest wish to go for additional sightseeing extra charges will be applicable</li><br>
+  <li>Please carry original ID Proof (Voter ID card /Passport/Driving License) etc. for security purpose and hotel policy</li><br>
+  <li>Cancellation charges applicable as per company policy</li><br>
+  <li>In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised</li><br>
+  <li>We will not be liable for claims or expenses arising from circumstances beyond our control such as accidents, injuries delayed or cancelled flights & acts or forces of nature</li><br>
+  
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

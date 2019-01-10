@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+} 
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;  
+}
+
+/* Create an active/current "tab button" class */    
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+  </div>
+
+
+  <div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Best Of India\Best Of India-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Best Of India\Best Of India-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Best Of India\Best Of India-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Best Of India\Best Of India-4.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");             
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">    
+  <h3>Itinerary</h3>
+  <p><b> Day 1: Arrive Delhi</b></p>
+
+Our representative will meet you outside the customs hall and assist you with transfer and check-in at the hotel. Overnight stay at the hotel.
+
+
+
+
+<p><b>Day 2: Delhi - City Sightseeing</b></p>
+
+Today, you will be taken for the full day city tour of Fascinating Old and New Delhi. In the past 300 years, it has been the capital of seven successive dynasties. Here you will come across a fascinating blend of the ancient and the contemporary where the government buildings,medieval palaces and bazaars co-exist with modern metropolis. Visit the Red Fort, the Jama Masjid, the Qutab Minar, Humayun’s Tomb,the Lakshmi Narayan Temple, and the India Gate, some of the best examples of India’s ancient architecture. In the evening we will dine at an Indian restaurant that specializes in traditional Indian cuisine. Overnight stay at the hotel in Delhi. (B, D)
+
+
+
+
+
+
+
+
+<p><b>Day 3: Delhi - Agra (250 Kms/4 hrs)</b></p>
+
+Today we leave for Agra. On arrival, we check-in at the hotel. Later we visit the TAJ MAHAL AND AGRA FORT. With its incredible lacy white grandeur the TAJ MAHAL is perhaps the most perfect architectural monument in the world. The AGRA FORT situated onj the banks of the river Yamuna,is another monumental mission accomplished by the great Mughal visionary Emperor Akbar. Overnight stay at the hotel. (B, D)
+
+
+ 
+
+
+
+
+
+
+
+
+<p><b>Day 4: Agra - Jaipur (240 Kms / 5 hrs)</b></p>
+
+Today we leave for Jaipur, En route - visit the city of Fatehpur Sikri - abandoned due to lack of water supply. Later we continue to Jaipur - popularly known as the Pink City. On arrival, we check - in at the hotel.  You have the rest of the day at your leisure. Overnight stay at the hotel. (B, D)
+
+
+
+
+
+
+
+
+<p><b>Day 5: Jaipur - City Sightseeing</b></p>
+
+Today we start our day after breakfast by visiting Amber Fort, the former seat of the Rajput rulers of the pink city. We ascend the fortess seated on elephants and wander around the beautiful palaces. We also visit the Shiladevi Temple, which continues to be the private temple of the royal family. In the afternoon we visit Jantar - Mantar, the open air royal observatory with its gigantic, astronomical instruments. After that, we will take you to the museum and the City Palace, stopping by the Hawa Mahal. Overnight at the hotel. (B, D)
+
+
+<p><b>Day 6: Jaipur - Udaipur (425 Kms / 7 Hrs)</b></p> 
+
+Have breakfast at the hotel, check out and we will take you to the Airport for your flight to Udaipur. Udaipur is popularly known as the city of lakes and sunrise,it is a beautiful city surrounded by hills and mountains. One can witness a great combination of nature and the historical past at Udaipur. Spend the rest of the day at your leisure. Overnight stay at the hotel. (B, D)
+
+
+
+<p><b>Day 7: Udaipur - City Sightseeing</b></p>
+
+After breakfast, we will start exploring Udaipur city on the full day tour. We will start with the visit the  City Palace, once the home of Mewar’s rulers, and today a museum. Here we see several flawlessly integrated palaces beside the clear blue waters of Lake Pichola. We visit Sahelion-ki-Bari (Garden of the maids of honour), the scene of royal parties for centuries and we drive around the scenic Fateh Sagar Lake, past the Kala Mandir, the Cenotaph of Maharana Pratap and the Jagdish temple. In the afternoon, we enjoy a boat ride on Lake Pichola. Overnight stay at the hotel. (B, D)
+
+
+
+
+
+<p><b>Day 8: Udaipur - Chennai (By Flight)</b></p>
+
+Today after breakfast, you will be taken to the airport for your flight to Chennai. On arrival you are transferred to your hotel. In the afternoon our half day city tour takes us to Fort St. George, completed in 1653 and St. Mary’s, the first church consecrated on Indian Soil. Also visit the National Art Gallery. The Government Museum displays the sculpture and architecture of the Dravidian dynasties. We drive along the Marina, a majestic promenade and proceed to the old city section of Mylapore. Overnight stay at the hotel. (B, D)
+<p><b>Day 9: Chennai - Kanchipuram & Mahabalipuram - Chennai</b></p>
+
+Today have breakfast at the hotel and then we will take you on the full day excursion to Kanchipuram and Mahabalipuram. The golden city of Kanchipuram has approximately 125 shrines, dating back to the early cholas of 200 B.C. Mahabalipuram is a beautiful seaside town of architectural beauty. Everything here speaks volumes about the majestic Tamil art, an open air museum of sculpture in living rock. The landmark of Mahabalipuram is the Shore Temple that has stood by the sea for 12 centuries. In the evening return back to Chennai. Overnight stay at the hotel. (B, D)
+
+
+<p><b>Day 10: Chennai - Madurai (Train)</b></p>
+
+After breakfast, we transfer to the railway station to board the train for Madurai leaving Chennai early in the morning and arriving Madurai in the early evening. Our staff will meet you at the railway station and assist with transfer to your hotel. The city hosts the famous Meenakshi Temple built in the Dravidian era. From any side inside the hall, the visitor is likely to get a kaleidoscopic view. In the evening,you attend the Aarti, a  hindu ritual,a must see for all visitors. Overnight stay at the hotel. (B, D)
+
+<p><b>Day 11: Madurai - Periyar (160 Kms / 5 Hrs)</b></p>
+
+In the morning, after breakfast we will visit the palace of Thirumalai Nayak, the famous king of the Nayak Dynasty. It has an impressive audience hall and a three- sided pavilion. Later we drive to the popular wildlife sanctuary of Periyar where you can spot several wild animals, including leopard, tigers and elephants. On arrival, we check in the hotel. In the evening, enjoy the boat ride on the Lake Periyar to view wildlife. Overnight stay at the hotel. (B, D)
+
+
+
+<p><b>Day 12: Periyar - Houseboat (155 Kms / 4 Hrs)</b></p>
+
+In the morning,we drive to board the houseboat for an overnight cruise through the lush green and serene backwaters of Kerala towards Alleppey. Here you can observe the everyday life of the locals. Delicious lunch & dinner will be served on board. At Allepey the boat will be anchored in the backwaters along paddy fields. Overnight on board the houseboat. (B, L, D)
+
+<p><b>Day 13: Cochin (63 Kms / 1.5 Hrs)</b></p>
+
+We disembark in the morning, post breakfast & drive to Cochin, originally built by the Portuguese. Its natural harbour with lagoons, canals and fishing hamlets is one of the three biggest ports on the West Coast. On arrival check in at the hotel.In the afternoon, enjoy a half day tour of Cochin visiting the Mattancherry Dutch Palace, the Jewish Synagogue and St.Francis Church - the oldest European Church in India. Along the tip of Fort Cochin, you see the Chinese fishing nets that are unique to this part of Kerala. In the evening we attend a Kathakali Dance Show. Overnight at the hotel. (B, D)
+
+
+<p><b>Day 14: Cochin - Departure</b></p>
+
+After Breakfast, depending on your flight timings, we will transfer you to the Airport for your next flight to onward destination. Your wonderful vacation comes to an end and you leave with wonderful memories to be cherished for a lifetime. (B)
+
+
+
+
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Deluxe</th>
+    
+  </tr>
+
+  <tr>
+    <td>Agra, Uttar Pradesh, India</td>
+    <td>CRYSTAL SAROVAR PREMIER</td>
+    
+
+    </tr>
+
+    <tr>
+    <td>Alleppey, Kerala, India</td>
+    <td>HOUSE BOAT</td>
+    
+
+    </tr>
+    <tr>
+    <td>Chennai, Tamil Nadu, India</td>
+    <td>GRAND CHENNAI BY GRT</td>
+    
+
+    </tr>
+
+    <tr>
+      <td>Cochin, Kerala, India</td>
+      <td>CASINO HOTEL</td>
+    </tr>
+
+    <tr>
+      <td>Delhi, India</td>
+      <td>JAYPEE VASANT CONTINENTAL</td>
+    </tr>
+    <tr>
+      <td>Jaipur, Rajasthan, India</td>
+      <td>ROYAL ORCHID CENTRAL</td>
+    </tr>
+
+    <tr>
+      <td>Madurai, Tamil Nadu, India</td>
+      <td>FORTUNE PANDIAN</td>
+    </tr>
+    <tr>
+      <td>PERIYAR</td>
+      <td>MOUNTAIN COURTYARD</td>
+    </tr>
+
+    <tr>
+      <td>Udaipur, Rajasthan, India</td>
+      <td>HOTEL FATEH NIWAS</td>
+    </tr>
+
+    
+</table>
+
+  </div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+  <table>
+    <tr>
+      <th>Hotel</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Twin ( Min. 2 Adults )</th>
+      <th>Twin ( Min. 4 Adults )</th>
+      <th>Single</th>
+    </tr>
+
+    <tr>
+      <td>Deluxe</td>
+      <td>01 Oct 2018</td>
+      <td>31 Mar 2019</td>
+      <td>129695</td>
+      <td>104225</td>
+      <td>179630</td>
+    </tr>
+  </table>
+
+  </div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  
+  <li>13 Nights’ accommodation on twin / double sharing basis in 4 star and Heritage  Hotels</li><br>
+  <li>Breakfast and Dinner Daily</li><br>
+  <li>Breakfast, Lunch and Dinner at House Boat</li><br>
+  <li>All sightseeing, excursions as mentioned in the itinerary by air conditioned Vehicle</li><br>
+  <li>Government Service Taxes, Toll Taxes, City Taxes and Driver Allowances</li><br>
+  <li>English Speaking Guide (For respective destination during sightseeing, wherever applicable)</li><br>
+  <li>Entrance fees at monuments</li><br>
+  <li>Boat ride in Udaipur</li><br>
+  <li>Game Drive on Lake Periyar</li><br>
+  <li>Kathakali dance in Cochin</li>
+<h3>Exclusions</h3>
+  
+  <li>Tips, drinks, laundry, telephone calls and all other items of a personal nature</li><br>
+  <li>Any International / Domestic Airfare</li><br>
+  <li>Train fare</li><br>
+  <li>Visa fees or any personal insurance</li><br>
+  <li>Porterage</li>
+   </div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>Meals on arrival and departure days is subject to flight timing</li>
+  <li>Supplementary cost will be applicable if the travel date is during national holidays, festivals, Long weekends and New Year</li>
+  <li>Long weekends and New Year</li>
+  <li>Rates are subject to change in case of   any changes in rate of exchange, Govt. taxes etc</li>
+  <li>In case of Hotel unavailability similar category hotel will be provided</li>
+  <li>Transportation not on disposable basis</li>
+  <li>No refund for any unused service or meals</li>
+  <li>Sakshi Travels reserves the right to change/modify the offer any time without any prior notice.</li>
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+} 
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;  
+}
+
+/* Create an active/current "tab button" class */    
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+  </div>
+
+
+  <div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Amazing Ladakh\Amazing Ladakh-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Amazing Ladakh\Amazing Ladakh-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Amazing Ladakh\Amazing Ladakh-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Amazing Ladakh\Amazing Ladakh-4.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");             
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">    
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrive Delhi</b></p>
+
+On arrival you will be met by our Airport representative and transfer to the Hotel. Check in at the Hotel. Afternoon sightseeing of old & New Delhi. Sightseeing tour of Old Delhi begins with a visit to Jama Mosque, the largest mosque in India, built in 1650 AD. This is followed by a drive past the Red Fort (Closed on Mondays) (1639-48), built by Emperor Shah Jahan, creator of The Taj Mahal. Later proceed to Raj Ghat - the site of the memorial to Mahatma Gandhi. After visiting the old Delhi proceed to New Delhi sightseeing begins with a drive past Safdarjang’s Tomb (1753 AD) while we are on the way to the Qutab Minar (1193 A.D.). This striking medieval tower of victory, built by the slave dynasty, is 73 m high. Within the Qutab complex, amidst the ruins of Quwat-ul-Islam mosque, stands the Iron pillar which has stood the vagaries of weather and has not rusted for over 1500 years. Continue your tour to visit the Humayun’s Tomb. Later drive through the Embassy area, Diplomatic enclave, stop for a quick photo shoot at India Gate and Rashtrapati Bhawan (Presidential Estate formerly Viceroy’s House) and Connaught Place, New Delhi’s main shopping area. Return to the hotels. Overnight at the hotel.
+
+
+
+
+
+
+<p><b>Day 2: Delhi – Leh</b></p>
+
+Breakfast at the Hotel. After Breakfast proceed to the airport and depart to Leh. Arrive Leh. On arrival at Leh airport, you will be met by our representative at the airport and escort you to Hotel. Complete day for the acclimatization which is 3500 Mtrs above sea level. In the evening short walk around Leh bazaar. Dinner at the Hotel. Overnight at Hotel.
+
+
+
+
+
+<p><b>Day 3: Leh - Monasteries</b></p>
+
+Breakfast at the Hotel. After breakfast, Day excursion to the famous monasteries, it is interesting to visit early in the morning to enjoy the praying ceremony at Thiksey monastery. Continue drive to Hemis monastery which is one of the most famous monasteries of the Ladakh region. On the way back visit to Shey Palace. Return to the Hotel. Dinner and Overnight at the Hotel.
+
+
+<p><b>Day 4: Leh - Alchi - Uletokpo</b></p>
+
+Breakfast at the Hotel. After Breakfast  proceed to Leh- Alchi – Uletokpo 75 Kms Leave for Uletokpo camping which is one of the most beautiful camping in the Ladakh region on the way visit Spituk monastery which is just 5 kms from Leh town. Continue drive to Alchi monastery is the only monastery in the Ladakh on flat ground. By the lunch time you will reach Uletokpo. Evening enjoy to sit on the bank of river coming down from the Ridzong side. Dinner and Overnight at the Hotel.
+
+
+<p><b>Day 5: Uletokpo - Lamayur - Leh</b></p>
+
+Breakfast at the Camp. After Breakfast proceed Uletokpo – Lamayuru – Leh 180 Kms Leave Uletokpo and continue drive to Lamayuru via Khaltsi. From here another 22 Kms drive will take you to Lamayuru. The oldest and spectacularly set Lamayuru monastery founded in the 10th Century. Visit the monastery. In the late afternoon drive back to Leh which will take about 4/5 hours’ drive, on the way back we stop at magnetic hill. Dinner and Overnight at Hotel.
+
+
+
+<p><b>Day 6: Leh - Excursion to Khardungla Pass</b></p>
+
+Breakfast at the Hotel After breakfast proceed  Leh – Khardongla Pass – Leh 85 Kms After breakfast full day excursion to Khardongla pass which is the highest motorable pass in the world 5600 Mtrs and has been recorded in the Gunnies Book of world records. At the top enjoy the nature beauty of snowcapped mountains. In the evening back to the hotel. Dinner and Overnight at Hotel.
+
+
+
+
+<p><b>Day 7: Leh - Delhi - Agra</b></p>
+
+Breakfast at the Hotel. After Breakfast Transfer in time to the airport to connect flight to Delhi  Arrive Delhi and proceed to Agra. (205 KM 5 Hrs.) Arrive Agra and check in at the Hotel. Evening Free. Dinner and Overnight at Hotel.
+
+
+
+
+
+<p><b>Day 8: Agra - Delhi - Departure</b></p>
+
+Breakfast at the Hotel. After breakfast proceed for a city tour of Agra where you will experience the TAJ MAHAL (closed on Fridays). An extravagant marble monument of love, built by Shah Jahan in 1653 as a memorial to his queen Mumtaz Mahal. This beautiful mausoleum in pure white marble took 22 years and 22000 craftsmen to build. Continue your tour to the Agra Fort, the original red sandstone fort built by Moghul Emperor Akbar in 1565. The Forts maze of courtyards, its marble mosque and lavish private chambers reflect the grandeur of the Mughal Empire. Return to the hotel. Afternoon Proceed to Delhi (205 KM 5 Hrs.)To connect flight to overseas.  
+
+  
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Deluxe</th>
+    
+  </tr>
+
+  <tr>
+    <td>Agra</td>
+    <td>Mansingh or similar</td>
+    
+
+    </tr>
+
+    <tr>
+      <td>Alchi</td>
+      <td>Zamskhang /Ethnic Ule Resort or similar</td>
+    </tr>
+
+    <tr>
+      <td>Delhi</td>
+      <td>The Royal Plaza or similar</td>
+    </tr>
+
+    <tr>
+      <td>Leh</td>
+      <td>Royal Ladakh/ Chonjor Residency or similar</td>
+    </tr>
+
+    
+
+
+</table>
+
+  </div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+  <table>
+    <tr>
+      <th>Hotel</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Twin</th>
+  
+    </tr>
+
+    <tr>
+      <td>Deluxe</td>
+      <td>01 Apr 2018</td>
+      <td>30 Sep 2018</td>
+      <td>54900</td>
+      
+    </tr>
+  </table>
+
+  </div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  
+  <li>7 Night  accommodation as per the Hotels given above net per person in twin sharing basis </li><br>
+  <li>Transfers and sightseeing tours by Qualis/Inovva/Scprpio/ In Ladakh with English speaking local guide </li><br>
+  <li>In Delhi and Agra transfers and sightseeing by small Air-condition car with local English speaking guide. </li><br>
+  <li>Accommodation as per the plan of the package Delhi & Agra 0n CPAI  (Bed and breakfast basis) and in Ladakh it is on MAPAI basis at all places (bed tea, breakfast and dinner)</li><br>
+  <li>Service of our representative at the time of arrival and departure   </li> <br>
+  <li>All entrance fee as per the Itinerary, taxes, monastery fee and special inner line permit </li><br> 
+  <li>Rates are inclusive of all taxes </li>
+  
+
+  
+  
+<h3>Exclusions</h3>
+  
+  <li>Airfare / Rail fare </li><br>
+  <li>Any kind of insurance.</li><br>
+  <li>Visa Charges  </li><br>
+  <li>Expenses of personal nature such as laundry bills, bar bills, telephone bills, tipping, porterage at airports/hotels. </li><br>
+  <li>Camera/video camera fees & museum fees (if any). </li><br>
+  <li>Any other services which are not included in the above cost. </li><br>
+  <li>Any Kind of Drinks (Alcoholic, Mineral, Aerated) </li><br>
+  <li>The service of Vehicles is not included on leisure days & after completing the sightseeing tour as per the itinerary.</li><br>
+  <li>GST @ 5% currently as applicable</li><br>
+  <li>Additional costs due to flight cancellation, road blocks etc are not included</li>
+  
+  
+   </div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>The prices are valid for travel till 30th September 2018</li>
+  <li>High season surcharges will be applicable</li>
+  <li>Prices are subject to change without prior notice</li>
+  <li>Rooms are subject to availability at the time of booking</li>
+  <li>Vehicle will be not at disposal. If guest wish to go for additional sightseeing extra charges will be applicable</li>
+  <li>Cancellation charges applicable as per company policy Early check in and late checkout subject to availability. Itineraries are subject  to change</li>
+  <li>In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised</li>
+  <li>We will not be liable for claims or expenses arising from circumstances beyond our control such as accidents, injuries delayed or cancelled flights & acts or forces of nature.</li>
+  <li><b>Do's</b></li>
+  <li>Always carry drinking water and dry food. </li>
+  <li>Take Disprin with you if you want to go to Khardung La, as it is very high altitude of 5359m. </li>
+  <li>If you are not able to go further from a particular spot in day, do not move stay there, as road</li>
+  <li>condition is very bad in some places and it would be very difficult to travel in night. </li>
+  <li>Temperature in Ladakh is too low and if you will throw any biodegradable item, it will remain in the same state for very long time, especially in snow, people defecate and the shit remains in the same form for years, so please try the Ladakhi winter toilets. </li>
+   <li>Use vehicles, which have good-ground clearance and are in good condition. SUVs like Tata Sumo Grande, Toyota Qualis and Highlander, Mitsubishi Pajero work best over there.</li>
+  <li>Make a first-aid box and carry proper medicines for headache, fever, and vomiting also in it.</li>
+  <li>There is electricity problem in Leh, so it is better to take extra batteries for digital products like camera, mobiles phones, etc. Charge them fully before leaving for the tour. You may not get electricity at some remote places and also because of the cold, the battery gets discharged soon.</li>
+  <li>People there are very friendly and hospitable. Respect them.</li>
+  <li><b>Dont's</b></li>
+  <li>If you reach Leh by air, stay that day and do not plan to go anywhere for that day, as you will need a day or two to acclimatize yourself. Drink plenty of fluids (that does not include alcohol), do not move much for the first two to three days.</li>
+  <li>Don't use Polythene bags. Ladakh is a "no polythene" zone. Kindly respect this and please carry back all the plastic you take with you.</li>
+  <li>Refill your water bottles instead of buying new ones. Mountain water is good. If you have doubt, boil it and refill.</li>
+  <li>Wear nice clothes covering your body while on roads, especially while visiting a Buddhist Gompas.</li>
+  <li>Note: Acute mountain sickness can occur to any one at an altitude above 10,000 ft. from the sea level. The most common symptoms of acute mountain sickness are headache disturb sleep loss of appetite, nausea, coughing, irregular breathing, breathlessness, lassitude and lack of concentration. Since Leh Town is situated at an altitude of 11,500 ft. above sea level. It is advisable to take the following precautions, so as to acclimatize your body properly.</li>
+
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

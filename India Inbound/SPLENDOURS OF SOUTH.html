@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+</div>
+
+<div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Splendors of south\kerala-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Splendors of south\kerala-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Splendors of south\kerala-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Splendors of south\kerala-1.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Chennai</b></p>
+Arrive Chennai, you will be met and received by our Tour Executive. He will introduce you to the driver who will be with you throughout your trip. You will proceed to the Hotel. Check in at the Hotel. Afternoon visit Kapaleeshwar Temple, an ancient Shiva Temple, constructed in pure Dravidian style. The Sri Parathasarathy Temple(Foreigners are not allowed inside) is dedicated to Lord Krishna, built in 8th century during the reign of the Pallavas. And Vadapalani Murugan Temple is among the most popular temples of the capital city and is located in the region of  Vadapalani in Chennai. Built about 125 years ago, this temple is considered as an auspicious place to get married and witnesses approximately 7000 marriages every year.Overnight at the Hotel.
+<p><b>Day 2: Chennai - Kanchipuram – Mahabalipuram - Pondicherry</b></p>
+Early Breakfast at the Hotel.After Breakfast drive to Pondicherry. Enroute visit Kanchipuram the golden city of thousand Temples and one of the seven sacred cities of India. In Kanchipuram visit Kamakshi Amman Temple and Kailanathanadan Temple. Proceed to Mahabalipuram to visit Arjuna’s Penance, Shore temple, and Five Rathas. After the visit proceed to Pondicherry. Arrive Pondicherry check in and overnight at the Hotel.
+
+<p><b>Day 3: Pondicherry - Chidampuram – Kumbakonam</b></p>
+Early Breakfast at the Hotel. After Breakfast visit Govt museum and Auroville where one can live in peace. The Spherical marble with a crystal inside it and the Meditation Centre is the main attraction.
+Later drive to Kumbakonam and enroute visit the Chidambaram Nataraja Temple. It depicts Lord Shiva as the Lord of the dance Bharatanatyam. The Temple timings are 06.00 to 12.00 PM. Arrive Kumbakonam and check in at the Hotel.In the evening visit Adhi Kumbeshwara Temple and Sarangabani Temple in Kumbakonam.Overnight at the Hotel.
+<p><b>Day 4: Kumbakonam - Thanjore - Trichy</b></p>
+Breakfast at the Hotel.After Breakfast proceed to Trichy and enroute visit Tanjore Brahadeeshwara Temple, Maratha Palace, Saraswathy Mahal Library, Art Gallery and Sangeeta Mahal. After the visit, proceed to Trichy. Arrive Trichy check in at the hotel.Evening, visit Srirangam Temple and Rock for Srirangam is famous for its Sri Ranganathaswamy Temple, a major pilgrimage destination for Hindus (especially Srivaishnavites) and the largest temple complex in India.The Rock Fort is a historic fort and temple complex built on an ancient rock. It is located in the city of  Tiruchirapalli, which is in the Indian state of Tamil Nadu. It is constructed on a 273-foot high rock. There are two Hindu temples inside the Rockfort, the Uchchi Pillaiyar Koil and The Siva Temple.Overnight at the Hotel.
+<p><b>Day 5: Trichy- Madurai</b></p>
+Breakfast at the Hotel.After Breakfast proceed to Madurai.Arrive Madurai check in at the Hotel.
+Afternoon, proceed for a sightseeing tour of Madurai –The primary interest is the Meenakshi Temple,where Dravidian temple architecture may be considered to be at its best. Its Hall of a thousand Pillars is fabulous and is filled with worshippers at all hours of the day. The tour also includes a visit to the Thirumalai Nayak Palace & Thiruparangundram temple.Late evening participate in an Aarti Ceremony at Meenakshi Temple. Return to the Hotel.Overnight at the Hotel.
+<p><b>Day 6: Madurai - Tirunelveli – Kanyakumari</b></p>
+Early breakfast at the Hotel.After Breakfast Proceed to Kanyakumari. Enroute visit Tirunelveli an ancient city of about 2000 years old and a town of Hoary tradition. Arrive Kanyakumari. Check in at the Hotel.Late afternoon visitKumari Amman Temple, (a temple dedicated to virgin Goddess Parvathi),Vivekananada Rock Memorial, Gandhi Memorial and Thiruvalluvar Statue.Overnight at the Hotel.
+<p><b>Day 7: Kanyakumari – Kovalam</b></p>
+Breakfast at the Hotel.After Breakfast proceed to Kovalam. ArriveKovalam. Check in at the Hotel.
+Afternoon Sightseeing of Trivandrum visiting. Padmanabha Swamy Temple SriPadmanabha Swamy Temple sits in the heart of the city of Trivandrum. The residing deity of this temple is Lord Vishnu. The temple is managed by the former royal family of Travancore. The temple is designed beautifully in the Dravidian style.Napier Museum, Chitira Art Gallery: Both Napier Museum and Sree Chithra Art Gallery are situated in the Museum compound, right in the heart of the city, near the zoological park. Napier Museum built in the 19th century, this Indo-Saracenic structure boasts a natural air-conditioning system and houses a rare collection of archaeological and historic artefacts, bronze idols, ancient ornaments, a temple chariot and ivory carvings. Kovalam Beach:Kovalam is an internationally renowned beach with three adjacent crescent beaches. It has been a favourite haunt of tourists, especially Europeans, since the 1930s. A massive rocky promontory on the beach has created a beautiful bay of calm waters ideal for sea bathing.Return to the Hotel & Overnight stay at the Hotel.
+<p><b>Day 8: Kovalam</b></p>
+Breakfast at the Hotel.Full day at leisure for individual activity.Overnight at the hotel
+<p><b>Day 9: Kovalam - Trivandrum - Departure</b></p>
+Breakfast at the Hotel. Check out and transferred to the Airport and Depart.
+
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Deluxe</th>
+        
+  </tr>
+  <tr>
+    <td>Chennai, Tamil Nadu, India</td>
+    <td>Grand By GRT</td>
+    </tr>
+  <tr>
+    <td>Kanyakumari, Tamil Nadu, India</td>
+    <td>Sparsa</td>
+    </tr>
+  <tr>
+    <td>Kovalam, Kerala, India</td>
+    <td>Udai Samudra</td>
+  </tr>
+  <tr>
+    <td>Kumbakonam, Tamil Nadu, India</td>
+    <td>Paradise Resort</td>
+  </tr>
+  <tr>
+    <td>Madurai, Tamil Nadu, India</td>
+    <td>Fortune Pandiyan</td>
+  </tr>
+  <tr>
+    <td>Pondicherry, Puducherry, India</td>
+    <td>The Promenade</td>
+  </tr>
+  <tr>
+    <td>Trichi, Tamil Nadu, India</td>
+    <td>Sangam</td>
+  </tr>
+  
+      
+</table>
+  
+ 
+  
+</div>
+<div id="Price" class="tabcontent">
+  <h3>Price</h3>
+  
+<table>
+  <tr>
+    <th>Hotel </th>
+    <th>Start Date  </th>
+    <th>End Date</th>
+    <th>Twin</th>
+    
+    
+       
+  </tr>
+  
+  
+   <tr>
+    <td>Deluxe</td>
+    <td>10 Apr 2018</td>
+    <td>30 Sep 2018</td>
+    <td>58590</td>
+    
+    
+    
+           
+  </tr>
+  
+  
+</table>
+</div>
+
+
+</div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  <li>8 Night Accommodation as per the Hotel given above net per person non twin sharing</li><br>
+  <li>on Bed & Breakfast basis</li>
+  <li>Meeting and assistance at airport by our representative. </li><br>
+  <li>Arrival & Departure transfer by Air-condition small car. </li><br>
+  <li>Sightseeing tours by Air-condition small car with English speaking guide & entrance fees as per the Itinerary </li><br>
+  <li>Presently applicable taxes.</li><br>
+   
+ 
+</ul>
+<h3>Exclusions</h3>
+<ul>
+  <li>Sightseeing except the above mentioned places </li><br>
+  <li>Any kind of insurance.</li><br>
+  <li>Airfare / Rail fare</li><br>
+  <li>Visa Charges </li><br>
+  <li>Expenses of personal nature such as laundry bills, bar bills, telephone bills, tipping, porterage at airports/hotels.</li><br>
+  <li>Camera/video camera fees & museum fees (if any). </li><br>
+  <li>Any other services which are not included in the above cost. </li><br>
+  <li>Any Kind of Drinks (Alcoholic, Mineral, Aerated) </li><br>
+  <li>The service of Vehicles is not included on leisure days & after completing the sightseeing tour as per the itinerary.</li><br>
+  <li>GST @ 5% currently as applicable </li><br>
+</ul>
+</div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>The prices are valid for travel till 30th September 2018</li><br>
+  <li>High season surcharges will be applicable</li><br>
+  <li>Prices are subject to change without prior notice</li><br>
+  <li>Rooms/Seats are subject to availability at the time of booking</li><br>
+  <li>Vehicle will be not at disposal. If guest wish to go for additional sightseeing extra charges will be applicable</li><br>
+  <li>Please carry original ID Proof (Voter ID card /Passport/Driving License) etc. for security purpose and hotel policy</li><br>
+  <li>Cancellation charges applicable as per company policy</li><br>
+  <li>In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised</li><br>
+  <li>We will not be liable for claims or expenses arising from circumstances beyond our control such as accidents, injuries delayed or cancelled flights & acts or forces of nature</li><br>
+  
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

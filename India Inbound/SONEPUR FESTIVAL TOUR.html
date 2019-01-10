@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+} 
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;  
+}
+
+/* Create an active/current "tab button" class */    
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+  </div>
+
+
+  <div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Sonepur\Sonepur-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Sonepur\Sonepur-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Sonepur\Sonepur-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Sonepur\Sonepur-4.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");             
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">    
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrive Delhi</b></p>
+
+On arrival you will be met by our Airport representative and transferred to the Hotel.Check in at the Hotel (Check in Mid-Day) After noon sightseeing of old and New Delhi.Sightseeing tour of Old Delhi begins with a visit to Jama Masjid the largest mosque in India, built in 1650 AD. This is followed by a drive past the Red Fort (Closed on Mondays) (1639-48), built by Emperor Shah Jahan, the architect of The TajMahal. Later proceed to Raj Ghat - the site of the memorial to Mahatma Gandhi. After visiting the old Delhi proceed to New Delhi. Your sightseeing begins with a drive past Safdarjang’s Tomb (1753 AD) on the way to the Qutab Minar (1193 A.D.). The Qutab Minar, a striking medieval tower of victory, built by in the slave dynasty, is 73 m high. Within the Qutab complex, amidst the ruins of Quwat-ul-Islam mosque, stands the Iron pillar which has stood the vagaries of weather and has not rusted for over 1500 years. Continue your tour to visit Humayun’s Tomb. Later drive through the Embassy area, Diplomatic enclave, stop for a quick photo shoot at India Gate and Rashtrapati Bhawan (Presidential Estate formerly Viceroy’s House) and Connaught Place, New Delhi’s main shopping area. Return to the hotel. Overnight at the hotel.
+
+
+ 
+
+
+
+
+
+
+<p><b>Day 2: Delhi – Jaipur (250 KM / 5 Hrs)</b></p>
+
+Breakfast at the hotel. After breakfast proceed to Jaipur. Arrive Jaipur and check in at the hotel.This afternoon proceed on a city tour to visit the unique Jantar Mantar, a magnificent stone observatory built by Raja Jai Singh in 1728 and drive past the Hawa Mahal, an intriguing “Palace of Winds”. The Hawa Mahal is really a facade built in 1799, to allow royal ladies to view the city from the windows. Later visit the opulent City Palace, the former royal residence built in a blend of Rajasthani and Mughal style which has grand museums displaying an excellent collection of miniature paintings, costumes and armory.(Please note – all monuments in Jaipur will be closed by 1630 hours).Return to the hotel. Overnight at the Hotel.
+
+
+
+
+
+
+
+
+
+
+
+<p><b>Day 3: In Jaipur</b></p>
+
+Breakfast at the hotel.After Breakfast proceed on an excursion to Amer Fort, which is located 12 kms outside Jaipur. The original Palace was built by Raja Mansingh and later additions were made by Sawai Jai Singh. One of the finest example of Rajput architecture, it was the ancient capital of Kaisshawah rulers. Enjoy the ascent to the Palace on the back of a brightly caparisoned elephant. Visit the multiple chambers and hallways of the palace which are famous for their design and decorations. This unique capital of the erstwhile warrior kings of Rajasthan is a must on every tourist itinerary to the state.Return to the hotel. Afternoon at leisure.Overnight at the Hotel.
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+<p><b>Day 4: Jaipur – Agra (250 KM/ 6Hrs)</b></p>
+
+Early Breakfast at the hotel.After the Breakfast proceed to Agra, enroute visiting Fatehpur Sikri. This deserted, red sandstone city, built by Emperor Akbar, between 1570 and 1585, now glows in its magnificent past. This was once the capital of the Moghul Empire for a short period but later abandoned due to scarcity of water. Here you will visit the Bulund Darwaza (The Gate of Victory), which is said to be the tallest gateway in the world. In the northern part of the courtyard is the superb white marble tomb of the famous Sufi saint – Shaik Salim Chishti. This tomb was built in 1570 and legend says that the Moghul Emperor Akbar was without a male heir because of which he made a barefoot pilgrimage from Agra to seek the blessings of this saint. The saint foretold the birth of a son, and in gratitude Akbar named his son Salim, who was later known by the title Jehangir. After the visit proceed to Agra and check in upon arrival.This afternoon, proceed  on a city tour where you will have the incredible experience of visiting the TAJ MAHAL (closed on Fridays) , an extravagant marble monument of love, built by the Mughal Emperor Shah Jahan in 1653 as a memorial to his queen MumtazMahal. This beautiful mausoleum in pure white marble was constructed over 22 years and with the labor of 22000 expert craftsmen. Continue your tour to the Agra Fort, the original red sandstone fort built by Moghul Emperor Akbar in 1565. The Fort’s maze of courtyards, its marble mosque and lavish private chambers reflect the grandeur of the Mughal Empire.Return to the hotel. Overnight at the hotel.
+
+
+
+
+
+
+
+
+
+
+
+
+<p><b>Day 5: Agra- Jhansi – Khajuraho</b></p>
+
+After early Tea / Coffee Proceed to the railway station with a packed breakfast . Depart Agra by the Shatabdi Express train at 08.00 Hrs.Arrive Jhansi at 10.45 Hrs. After arrival visit Jhansi and Orchha. Jhansi is a historic city in the Indian state of Uttar Pradesh. On the banks of the Pahuj River. Orchha is a town in  Madhya Pradesh state. The town was established by the Rajput King RudraPratap Singh  in the 16th century AD.After the visit Proceed to Khajuraho (180 KM/5Hrs) Arrive Khajuraho and Check in and overnight at the Hotel.
+
+
+
+
+
+<p><b>Day 6: Khajuraho – Varanasi</b></p> 
+
+Breakfast at the hotel.After breakfast visit The Western Group of Temples, the Eastern Group of Temples and the Southern Group of Temples. These temples are dedicated to several Hindu Gods and Goddesses along with deities of the Jain religion.   Among the temples that are standing till now, 6 are dedicated to Lord Shiva, 8 to Lord Vishnu, 1 each to Lord Ganesha and the Sun God, while 3 are dedicated to Jain Tirthankaras. The largest of the temples is the KandariyaMahadeo Temple that is dedicated to the glory of Lord Shiva. It makes Khajuraho one of the four holy sites dedicated to the glory of Lord Shiva, the other three being Gaya, Kashi and Kedarnath. Afternoon Transfer to the Airport and Depart to Varanasi Arrive Varanasi .Check in and overnight at the Hotel.
+
+<p><b>Day 7: In Varanasi</b></p>
+
+Early morning enjoy Tea and coffee at the hotel.Proceed for a boat ride on the river Ganges. The best time to visit the Ghats is at dawn when pilgrims take their morning dip. The most famous Ghat is the Dasaswamedh Ghat from where we begin this tour. Enjoy the boat ride while looking out for people on the Ghats – the women bathing discreetly in their sarees, the young men displaying prowess in yogic postures and the Brahmin priests offering prayers for one and all. Amidst all this you may also come across the burning Ghats which are cremation sites for the dead.Return to the hotel for Breakfast. Morning at leisure. In the afternoon, visit the  famous city of Sarnath, north east of Varanasi – it is as holy to Buddhists as Varanasi is to Hindus. Having achieved enlightenment at Bodhgaya, Buddha came to Sarnath to preach his message of the way to Nirvana. Later, Ashoka, the great Buddhist Eemperor erected magnificent Stupas and monasteries at Sarnath. What is visible today are the ruins of a once flourishing Buddhist monastery and a fine museum which houses an excellent collection of Buddhist art and sculptures.Return to the Hotel .Overnight at the Hotel
+
+<p><b>Day 8: Varanasi – Patna (280 Kms. / 7 Hrs.)</b></p>
+
+Early breakfast at the Hotel. After breakfast proceed to Patna. Arrive Patna and Check in at the Hotel. Overnight at the Hotel
+
+<p><b>Day 9: Patna: full day participate in the fair</b></p>
+
+Return to the Hotel for Overnight
+
+<p><b>Day 10: Patna – Delhi</b></p>
+
+Breakfast at the Hotel. Morning at leisure Afternoon proceed to the Airport and depart Your wonderful vacation comes to an end!Proceed to Patna International Airport to connect to your onward flight, with wonderful memories to be cherished for a lifetime.
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Deluxe</th>
+    
+  </tr>
+
+  <tr>
+    <td>Agra, Uttar Pradesh, India</td>
+    <td>Sarovar</td>
+    
+
+    </tr>
+
+    <tr>
+    <td>Delhi, India</td>
+    <td>Vasant Continental</td>
+    
+
+    </tr>
+    <tr>
+    <td>Jaipur, Rajasthan, India</td>
+    <td>Royal Orchid</td>
+    
+
+    </tr>
+
+    <tr>
+      <td>Khajuraho, Madhya Pradesh, India</td>
+      <td>Ramada</td>
+    </tr>
+
+    <tr>
+      <td>Patna, Bihar, India</td>
+      <td>Pataliputra Exotica OR Tents</td>
+    </tr>   
+
+    <tr>
+      <td>Varanasi, Uttar Pradesh, India</td>
+      <td>Surya Kaiser Palace</td>
+    </tr>  
+    
+</table>
+
+  </div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+  <table>
+    <tr>
+      <th>Hotel</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Twin ( Min. 2 Adults )</th>
+      <th>Twin ( Min. 4 Adults )</th>
+      <th>Single</th>
+    </tr>
+
+    <tr>
+      <td>Deluxe</td>
+      <td>14 Nov 2018</td>
+      <td>13 Dec 2018</td>
+      <td>77350</td>
+      <td>63700</td>
+      <td>103025</td>
+    </tr>
+  </table>
+
+  </div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  
+  <li>09 Nights’ accommodation as per the Hotel given above net per person non twin sharing on room with Breakfast and dinner at all the places </li><br>
+  <li>Meeting and assistance at airport by our representative.</li><br>
+  <li>Arrival and Departure transfer by Air-condition vehicle  </li><br>
+  <li>Sightseeing tours by Air-condition vehicle  with English speaking guide and entrance fees as per the Itinerary </li><br>
+  <li>Presently applicable taxes.</li>
+  
+  
+<h3>Exclusions</h3>
+  
+  <li>Sightseeing except the above mentioned places </li><br>
+  <li>Any kind of insurance.</li><br>
+  <li>Airfare / Rail fare </li><br>
+  <li>Visa Charges </li><br>
+  <li>Expenses of personal nature such as laundry bills, bar bills, telephone bills, tipping, porterage at airports/hotels.</li><br>
+  <li>Camera/video camera fees and museum fees (if any). </li><br>
+  <li>Any other services which are not included in the above cost. </li><br>
+  <li>Any Kind of Drinks (Alcoholic, Mineral, Aerated) </li><br>
+  <li>The service of Vehicles is not included on leisure days and after completing the sightseeing tour as per the itinerary.</li><br>
+  <li>GST @ 5% currently as applicable </li>
+   </div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>Meals on arrival and departure days is subject to flight timing</li>
+  <li>Supplementary cost will be applicable if the travel date is during national holidays, festivals, Long weekends and New Year</li>
+  <li>Rates are subject to change in case of   any changes in rate of exchange, Govt. taxes etc</li>
+  <li>In case of Hotel unavailability similar category hotel will be provided</li>
+  <li>Transportation not on disposable basis</li>
+  <li>No refund for any unused service or meals</li>
+  <li>Sakshi Travels reserves the right to change/modify the offer any time without any prior notice.</li>
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+</div>
+
+<div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\Domestic\Kerala\kerala-1.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrive in Cape Town</b></p>
+
+Welcome to South Africa. Arrive at Cape Town airport and transfer to hotel for your stay. Overnight stay in Cape Town.<p><b>Day 2: Cape Town - Cape Town city tour</b></p>
+
+After breakfast, Discover the spirit of the Mother City with its vibrant cultures and history all set against beautiful scenery. The highlights on your half day tour include Table Mountain Cable way (weather permitting), Greenmarket Square, a scenic drive through the city allows you to catch glimpses of iconic landmarks, such as the Company Gardens, the Houses of Parliament, City hall and the Castle. This afternoon you have some unaccompanied time at leisure which can be used to explore the Victoria and Alfred Waterfront and other shopping opportunities. Overnight stay in Cape Town.
+
+Optional :- One can enjoy Ziplining at an additional cost (approx 600 ZAR per person)<br><br>
+
+<p><b>Day 3: Cape Town - Cape Peninsula Tour</b></p>
+
+Today you will travel on Africa’s premier tour route to the romantic place where the Indian and Atlantic oceans meet. On your full day Cape Point Tour, discover why Sir Francis Drake, the explorer, called it "the fairest Cape that we saw in the circumference of the Globe". Offering an exciting day out, the tour includes a visit to Hout Bay, a cruise to the seal colony (weather permitting), Cape Point Nature Reserve, Cape Point, Cape of Good Hope, followed by a late lunch stop (on own account). Before heading back to your hotel, visit the penguin colony in Simonstown and take a walk through the scenic Kirstenbosch Botanical Gardens. Overnight stay in Cape Town.
+
+
+
+
+<p><b>Day 4: Cape Town - Knysna - Knysna Lagoon Cruise</b></p>
+
+After breakfast and check out from the hotel, depart along the Garden Route to the coastal town of Knysna, famous for its oysters and magnificent views. Knysna’s most famed attraction is the Knysna Heads, the entry into the Knysna lagoon. Legends tell that many ancient sailing vessels met their doom at this location. This afternoon enjoy a sunset cruise on the Knysna Lagoon before spending the evening at leisure, with the vehicle and guide at your disposal until 20h00. Overnight stay in Knysna.
+<p><b>Day 5: Knysna - Oudtshoorn - Knysna</b></p>
+
+Enjoy breakfast this morning before departing for full day touring in Oudtshoorn. Your first stop is at Cango Caves, the Klein Karoo’s oldest and most popular attraction and one of the world’s natural wonders. Your next stop is Safari Ostrich Farm, where can interact with the world’s largest birds that sport the most beautiful feathers. Fall in love with these uniquely clumsy birds and risk standing on their eggs. Professional guides will conduct a tour where you learn more about the farming methods involved and the ostrich economy which saw a boom in this small desert town in the early 1900’s. The final piece of your tour is a stop at Cango Wildlife Ranch, where you have the opportunity to view some of the animal species which inhabited the Karoo region in the early days. Return to your hotel to freshen up before some time at leisure with the vehicle and guide at your disposal until 20h00. Overnight stay in Knysna.
+
+
+<p><b>Day 6: Knysna - George - Johannesburg - Sun City</b></p>
+
+After check out and breakfast this morning you will be transferred to George Airport for your domestic flight to Johannesburg. On arrival at O R Tambo International Airport you will be met by your driver and transferred to your hotel. The rest of the day is at leisure to explore Emperor’s Palace (unaccompanied), which offers a wide variety of entertainment and activities to entice all ages. Overnight stay in Sun City.
+<p><b>Day 7: Sun City</b></p>
+
+Full day is free for leisure. Overnight stay in Sun City.
+
+<p><b>Day 8: Sun City - Johannesburg</b></p>
+
+After breakfast check out from Hotel and transfer to Johannesburg. Arrive and check in at hotel .Rest of the day is free for leisure. Overnight stay in Johannesburg.
+<p><b>Day 9: Johannesburg - Departure</b></p>
+
+After breakfast it’s time to check out. Transfer to the George airport for your onward flight or back home.
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Standard</th>
+    <th>Deluxe</th>
+    <th>Premium</th>
+    
+  </tr>
+  <tr>
+    <td>Cape Town</td>
+    <td>Garden Court Nelson Mandela Buoulevard Hotel or similar</td>
+    <td>Southern Sun Cape Sun or similar</td>
+    <td>Westin or similar</td>  
+  </tr>
+  <tr>
+    <td>Johannesburg</td>
+    <td>Garden Court / Tambo or similar</td>
+    <td>Metcourt Suites or similar</td> 
+    <td>D'Oreale Grande or similar</td> 
+  </tr>
+  <tr>
+    <td>Knysna</td>
+    <td>Graywood Hotel or similar</td>
+    <td>Knysna log Inn or similar</td> 
+    <td>Conrad Pezula or similar</td> 
+  </tr><tr>
+    <td>Sun City</td>
+    <td>Sun City Cabanas or similar</td>
+    <td>Sun City Soho or similar</td> 
+    <td>Sun City Cascades or similar</td> 
+  </tr>
+      
+</table>
+  
+ 
+  
+</div>
+<div id="Price" class="tabcontent">
+  <h3>Price</h3>
+  
+<table>
+  <tr>
+    <th>Hotel </th>
+    <th>Start Date  </th>
+    <th>End Date</th>
+    <th> Twin ( Min. 2 Adults )</th>
+    <th>Triple ( Min. 4 Adults )</th>
+    <th>Single</th>
+    <th>Child no bed</th>
+    
+  </tr>
+  
+  <tr>
+    <td>Standard</td>
+    <td>01 Apr 2018</td>
+    <td>31 Aug 2018</td>
+    <td>87025</td>
+    <td>66534</td>
+    <td>156633</td>
+    <td>-</td>
+       
+  </tr>
+   <tr>
+    <td>Standard</td>
+    <td>01 Sep 2018</td>
+    <td>30 Sep 2018</td>
+    <td>89286</td>
+    <td>68794</td>
+    <td>160705</td>
+    <td>-</td>
+       
+  </tr>
+   <tr>
+    <td>Standard</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>96447</td>
+    <td>69024</td>
+    <td>121753</td>
+    <td>23304</td>
+       
+  </tr>
+  <tr>
+    <td>Deluxe</td>
+    <td>01 Apr 2018</td>
+    <td>31 Aug 2018</td>
+    <td>99498</td>
+    <td>79035</td>
+    <td>179099</td>
+    <td>-</td>
+       
+  </tr>
+   <tr>
+    <td>Deluxe</td>
+    <td>01 Sep 2018</td>
+    <td>30 Sep 2018</td>
+    <td>104422</td>
+    <td>83931</td>
+    <td>187960</td>
+    <td>-</td>
+       
+  </tr>
+   <tr>
+    <td>Deluxe</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>96447</td>
+    <td>69024</td>
+    <td>121753</td>
+    <td>23304</td>
+       
+  </tr>
+  <tr>
+    <td>Premium</td>
+    <td>01 Oct 2018</td>
+    <td>31 Mar 2019</td>
+    <td>116790</td>
+    <td>89320</td>
+    <td>154579</td>
+    <td>25268</td>
+       
+  </tr>
+  
+</table>
+</div>
+
+
+</div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  <li>3 Nights in Cape Town with breakfast</li><br>
+  <li>2 Nights in Knysna with breakfast</li><br>
+  <li>2 Nights in Sun City with breakfast</li><br>
+  <li>1 Night in Johannesburg with breakfast</li><br>
+  <li>Transfer from Cape town airport to hotel on private</li><br>
+  <li>Half day Cape Town City tour including Table Mountain on private</li><br>
+  <li>Full day Cape Peninsula Tour including Cape Point, Penguins, Cape of Good Hope on private</li><br>
+   <li>Sunset cruise on Knysna lagoon</li><br>
+  <li>Full day Oudtshoorn tour on private</li><br>
+  <li>Transfer from Knysna hotel to George airport on private</li><br>
+  <li>Transfer from Johannesburg airport to Sun city hotel on private</li><br>
+  <li>Transfer from Sun City hotel to Johannesburg hotel on private</li><br>
+  <li>Transfer from Johannesburg hotel to airport on SIC</li><br>
+  <li>{Note: - Kindly be on time for SIC transfer as coach will not wait for more than the confirmed pick up time and there will be no refund provided for missed transfers}</li><br>
+
+   
+
+  
+</ul>
+<h3>Exclusions</h3>
+<ul>
+  <li>Airfare and Taxes</li><br>
+  <li>Any increase in Govt. taxes, Fuel price and any applicability of new taxes from the govt.</li><br>
+  <li>Any up gradation in hotel room category</li><br>
+  <li>Any meals other than specified above</li><br>
+  <li>Any sightseeing other than mentioned above</li><br>
+  <li>Any Entrance fees or Fees for video or camera permit</li><br>
+  <li>Any item of personal nature like tips, laundry, telephone calls, etc.</li><br>
+  <li>GST will be applicable on total invoice</li><br>
+</ul>
+</div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>The given prices are valid for travel till 31st March 2019</li><br>
+  <li>High season surcharges will be applicable</li><br>
+  <li>Prices are subject to change without prior notice</li><br>
+  <li>Rooms/Seats are subject to availability at the time of booking</li><br>
+  <li>Vehicle will be not at disposal. If guest wish to go for additional sightseeing extra charges will be applicable</li><br>
+  <li>Please carry original ID Proof (Voter ID card /Passport/Driving License) etc. for security purpose and hotel policy</li><br>
+  <li>Early check in and late checkout subject to availability. Itineraries are subject  to change</li><br>
+  <li>Cancellation charges applicable as per company policy</li><br>
+  <li>In case we are not able to provide the same hotels as mentioned, then we shall provide similar alternate properties, change in the cost if any will be advised</li><br>
+  <li>We will not be liable for claims or expenses arising from circumstances beyond our control such as accidents, injuries delayed or cancelled flights & acts or forces of nature</li><br>
+  
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+} 
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;  
+}
+
+/* Create an active/current "tab button" class */    
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+  </div>
+
+
+  <div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Glipmses Of India\Glipmses Of India-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Glipmses Of India\Glipmses Of India-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Glipmses Of India\Glipmses Of India-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Glipmses Of India\Glipmses Of India-4.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");             
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">    
+  <h3>Itinerary</h3>
+  <p><b>Day 1: Arrive Delhi</b></p>
+
+Our representative will meet you outside the customs hall and assist you with transfer and check-in at the hotel. Overnight stay at the hotel. (D)
+
+
+
+
+<p><b>Day 2: Delhi City Sightseeing - Agra (250 Kms/4 hrs)</b></p>
+
+Today, you will be taken for the full day city tour of Fascinating Old and New Delhi. In the past 300 years, it has been the capital of seven successive dynasties. Here you will come across a fascinating blend of the ancient and the contemporary where the government buildings, medieval palaces and bazaars co-exist with modern metropolis. Visit the Red Fort, the walled city built by Emperor Shah Jehan in 1648 as his capital and named after him. Opposite the fort are the black and white onion dome and minarets of the Jama Masjid, the most elegant mosque in India. We drive past Kotla Firoz Shah, the ruins of an old fort and the old city subject to traffic restrictions. Later we drive to Agra. In the evening we will dine at an Indian restaurant that specializes in traditional Indian cuisine. Overnight stay at the hotel in Agra. (B, D)
+
+
+
+
+
+
+
+
+
+
+
+<p><b>Day 3: Agra City Sightseeing</b></p>
+
+We make a morning visit to TAJ MAHAL and AGRA FORT. With its incredible lacy white grandeur the TAJ MAHAL is perhaps the most perfect architectural monument in the world. The AGRA FORT situated on the banks of the river Yamuna, is another monumental mission accomplished by the great Mughal visionary Emperor Akbar. The palaces, mosques and audience halls contained within its massive walls of red sandstone are perfect examples of the blending Islamic and Hindu styles. Overnight stay at the hotel in Agra. (B, D)
+
+
+
+ 
+
+
+
+
+
+
+
+
+<p><b>Day 4: Agra - Fatehpur Sikri - Jaipur (240 Kms / 5 hrs)</b></p>
+
+After breakfast, we drive to Jaipur. En route - visit the city of Fatehpur Sikri – the abandoned red sandstone city built in the 16th century by the Mughal Emperor Akbar, one of India’s greatest rulers. The architecture at Fatehpur Sikri is a combination of Hindu and Muslim styles, expressing Akbar’s vision of synthesizing the cultures. Later we continue to Jaipur - popularly known as the Pink City. On arrival, we check - in at the hotel.  You have the rest of the day at your leisure.  Overnight stay at the hotel. (B, D)
+
+
+
+
+
+
+
+
+
+<p><b>Day 5: Jaipur - City Sightseeing</b></p>
+
+Today we start our day after breakfast by visiting Amber Fort, the former seat of the Rajput rulers of the pink city. We explore the fortess seated on elephants and wander around the beautiful palaces. We also visit the Shiladevi Temple, which continues to be the private temple of the royal family. In the afternoon we visit Jantar - Mantar, the open air royal observatory with its gigantic, astronomical instruments. After that, we will take you to the museum and the City Palace, stopping by the Hawa Mahal. Overnight at the hotel in Jaipur. (B, D)
+
+
+
+
+
+<p><b>Day 6: Jaipur - Mandawa (150 Kms / 3 Hrs)</b></p> 
+
+Have breakfast at the hotel, check out and we will take you to Mandawa. The Rajput ruler of Mandawa, Thakur Nawal Singh, built a fort in 1755 to protect this outpost. On arrival we check in at the hotel.In the evening, we take a walking tour to see the frescoes and Havelis of Mandawa before an enjoyable camel ride on the sand dunes. Later, we savor local beverages while watching the sun set over the dunes. Overnight stay at the hotel in Mandawa. (B, D)
+
+
+
+
+
+
+
+<p><b>Day 7: Mandawa - Delhi ( 270 Kms / 6 Hrs )</b></p>
+
+We drive back to Delhi for a city tour of New Delhi. We drive past the Presidential Palace, the Rashtrapati Bhavan and the secretariat buildings, the impressive Rajpath to the World War I memorial arch, the India Gate.We visit Humayun’s Tomb, the Qutub Minar, a 72m high minaret (the world’s tallest) and the 1600 year-old uncorroded Iron Pillar. Later in the evening, we transfer to the hotel and prepare to enjoy dinner.  Overnight stay at the hotel in Delhi. (B, D)
+
+
+
+
+
+
+
+<p><b>Day 8: Depart Delhi</b></p>
+
+After Breakfast, depending on your flight timings, we will transfer you to the Airport for your next flight to onward destination. Your wonderful vacation comes to an end and you leave with wonderful memories to be cherished for a lifetime. (B)
+
+
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Deluxe</th>
+    
+  </tr>
+
+  <tr>
+    <td>Agra, Uttar Pradesh, India</td>
+    <td>CRYSTAL SAROVAR PREMIER</td>
+    
+
+    </tr>
+
+    <tr>
+    <td>Delhi, India</td>
+    <td>JAYPEE VASANT CONTINENTAL
+</td>
+    
+
+    </tr>
+    <tr>
+    <td>Jaipur, Rajasthan, India</td>
+    <td>ROYAL ORCHID CENTRAL</td>
+    
+
+    </tr>
+
+    <tr>
+      <td>Mandawa, Rajasthan, India</td>
+      <td>THE CASTLE MANADAWA</td>
+    </tr>   
+    
+</table>
+
+  </div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+  <table>
+    <tr>
+      <th>Hotel</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Twin ( Min. 2 Adults )</th>
+      <th>Twin ( Min. 4 Adults )</th>
+      <th>Single</th>
+    </tr>
+
+    <tr>
+      <td>Deluxe</td>
+      <td>01 Oct 2018</td>
+      <td>31 Mar 2019</td>
+      <td>62600</td>
+      <td>52450</td>
+      <td>88980</td>
+    </tr>
+  </table>
+
+  </div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  
+  <li>07 Nights’ accommodation on twin / double sharing basis in 4 star and Heritage  Hotels</li><br>
+  <li>Breakfast and Dinner Daily</li><br>
+  <li>All sightseeing, excursions as mentioned in the itinerary by air conditioned Vehicle</li><br>
+  <li>Government Service Taxes, Toll Taxes, City Taxes and Driver Allowances</li><br>
+  <li>English Speaking Guide (For respective destination during sightseeing, wherever applicable)</li><br>
+  <li>Entrance fees at monuments</li>
+  
+  
+<h3>Exclusions</h3>
+  
+  <li>Tips, drinks, laundry, telephone calls and all other items of a personal nature</li><br>
+  <li>Any International / Domestic Airfare</li><br>
+  <li>Train fare</li><br>
+  <li>Visa fees or any personal insurance</li><br>
+  <li>Porterage</li>
+   </div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>Meals on arrival and departure days is subject to flight timing</li>
+  <li>Supplementary cost will be applicable if the travel date is during national holidays, festivals, Long weekends and New Year</li>
+  <li>Rates are subject to change in case of   any changes in rate of exchange, Govt. taxes etc</li>
+  <li>In case of Hotel unavailability similar category hotel will be provided</li>
+  <li>Transportation not on disposable basis</li>
+  <li>No refund for any unused service or meals</li>
+  <li>Sakshi Travels reserves the right to change/modify the offer any time without any prior notice.</li>
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 

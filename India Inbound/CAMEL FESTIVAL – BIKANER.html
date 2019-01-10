@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: "Lato", sans-serif;}
+
+/* Style the tab */
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+    width: 30%;
+    height: 300px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+} 
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;  
+}
+
+/* Create an active/current "tab button" class */    
+.tab button.active {
+    background-color: red;
+}
+
+/* Style the tab content */
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    width: 70%;
+    border-left: none;
+    height: 100%;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Photos')" id="defaultOpen">Photos 
+</button>
+  <button class="tablinks" onclick="openCity(event, 'Itinerary')">Itinerary</button>
+  <button class="tablinks" onclick="openCity(event, 'Accommodation Details')">Accommodation Details</button>
+  <button class="tablinks" onclick="openCity(event, 'Price')">Price</button>
+  <button class="tablinks" onclick="openCity(event, 'Inclusions & Exclusions')">Inclusions & Exclusions</button>
+  <button class="tablinks" onclick="openCity(event, 'Terms & Conditions')">Terms & Conditions</button>
+  </div>
+
+
+  <div id="Photos" class="tabcontent">
+  <h3>Photos</h3>
+  <div class="w3-content w3-display-container">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Camel Festival-Bikaner\Camel Festival-Bikaner-1.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Camel Festival-Bikaner\Camel Festival-Bikaner-2.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Camel Festival-Bikaner\Camel Festival-Bikaner-3.jpg" width="900px" height="500px">
+  <img class="mySlides" src="images\packages pictures\India Inbound\Camel Festival-Bikaner\Camel Festival-Bikaner-4.jpg" width="900px" height="500px">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">Previous;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">Next;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");             
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+
+</div>
+
+<div id="Itinerary" class="tabcontent">    
+  <h3>Itinerary</h3>
+  <p><b>Day 1: 07th Jan - Arrive Delhi</b></p>
+
+On arrival you will met by our representative at the airport and transfer to the hotel.Check in at the Hotel .Check in mid-day. After noon sightseeing of old & New Delhi. Sightseeing tour of Old Delhi begins with a visit to Jama Mosque, the largest mosque in India, built in 1650 AD. This is followed by a drive past the Red Fort (Closed on Mondays) (1639-48), built by Emperor Shah Jahan, creator of The TajMahal. Later proceed to Raj Ghat - the site of the memorial to Mahatma Gandhi. After visiting the old Delhi proceed to New Delhi sightseeing begins with a drive past Safdarjang’s Tomb (1753 AD) while we are on the way to the QutabMinar (1193 A.D.). This striking medieval tower of victory, built by the slave dynasty, is 73 m high. Within the Qutab complex, amidst the ruins of Quwat-ul-Islam mosque, stands the Iron pillar which has stood the vagaries of weather and has not rusted for over 1500 years. Continue your tour to visit the Humayun’s Tomb. Later drive through the Embassy area, Diplomatic enclave, stop for a quick photo shoot at India Gate and Rashtrapati Bhawan (Presidential Estate formerly Viceroy’s House) and Connaught Place, New Delhi’s main shopping area. Return to the hotels.Overnight at the hotel
+
+
+
+
+<p><b>Day 2: 08 thJan - Delhi – Agra</b></p>
+
+Breakfast at the hotel. After Breakfast Proceed to Agra (205 KM / 5 Hrs.) Arrive Agra.After arrival check in at the Hotel. Afternoon, proceed for a city tour where you will experience the TAJ MAHAL (closed on Fridays). An extravagant marble monument of love, built by Shah Jahan in 1653 as a memorial to his queen MumtazMahal. This beautiful mausoleum in pure white marble took 22 years and 22000 craftsmen to build. Continue your tour to the Agra Fort, the original red sandstone fort built by Moghul Emperor Akbar in 1565. The Forts maze of courtyards, its marble mosque and lavish private chambers reflect the grandeur of the Mughal Empire. Return to the hotel. Overnight at the Hotel
+
+
+
+
+
+<p><b>Day 3: 09th Jan - Agra – Jaipur visiting Fatehpursikri</b></p>
+
+Early Breakfast at the hotel.After Breakfast Proceed to Jaipur visiting FatehpurSikri( 250 KM/ 6 Hrs.) FatehpurSikri. This deserted, red sandstone city, built by Emperor Akbar, between 1570 and 1585, now glows in its magnificent past. This was once the capital of the Moghul Empire for a short period but later abandoned due to scarcity of water. Here you will visit the BulundDarwaza (The Gate of Victory), which is said to be the tallest gateway in the world. In the northern part of the courtyard is the superb white marble tomb of the famous Sufi saint - ShaikSalimChishti. This tomb was built in 1570 and legend says that the Moghul Emperor Akbar was without a male heir because of which he made a barefoot pilgrimage from Agra to seek the blessings of this saint. The saint foretold the birth of a son, and in gratitude Akbar named his son Salim, who was later called by the title Jehangir.  After the visit of FatehpurSikri proceed to Jaipur. Arrive Jaipur Check in at the Hotel Afternoon, proceed for a city tour to visit the unique JantarMantar, which is a magnificent stone observatory built by Raja Jai Singh in 1728 and drive past the HawaMahal, an intriguing “ Palace of Winds”. This was really a facade built in 1799, to allow royal ladies to view the city from the windows. Later visit the opulent City Palace, the former royal residence built in a blend of Rajasthani and Mughal style which has grand museums displaying an excellent collection of miniature paintings, costumes and armory. (Please note – all monuments in Jaipur will be closed by 1630 hours). Return to the hotel Overnight at the hotel
+
+
+
+
+
+
+<p><b>Day 4: 10th Jan - in Jaipur</b></p>
+
+Breakfast at the hotel. After Breakfast, proceed for an excursion to Amer Fort, which is located 12 kms outside Jaipur. The original Palace was built by Raja Mansingh and later additions were made by Sawai Jai Singh. One of the finest example of Rajput architecture, it was the ancient capital of Kaisshawah rulers. Enjoy the ascent to the Palace on the back of a brightly caparisoned elephant. Visit the multiple chambers and hallways of the palace which are famous for their design and decorations. This unique capital of the erstwhile warrior kings of Rajasthan is a must on every tourist itinerary to the state. Return to the Hotel. Afternoon at leisure. Overnight at the Hotel
+
+
+
+
+<p><b>Day 5: 11th Jan - Jaipur – Bikaner</b></p>
+
+Breakfast at the hotel . After breakfast proceed to Bikaner. Arrive Bikaner & Check in at the Hotel Overnight at the Hotel
+
+
+
+
+
+<p><b>Day 6: 12th Jan - (Participate in the Camel Festival)</b></p>
+
+Early Breakfast at the Hotel. After breakfast guests will be transferred to Bikaner by Jeep.Check in at the Hotel.Full day visit camel festival. Overnight at the Hotel.
+
+
+
+<p><b>Day 7: 13th Jan - (Participate in the Camel Festival)</b></p>
+
+Breakfast at the Hotel . After breakfast Full day visit camel festival . Overnight at the Hotel.
+
+
+
+
+<p><b>Day 8: 14th Jan - Bikaner – Jodhpur</b></p>
+
+Breakfast at the hotel. After Breakfast Proceed to Jodhpur (250 KM/5Hrs). Arrive Jodhpur. Check in at the Hotel. Afternoon proceed for a sightseeing tour of Jodhpur. The tour begins from “The Mehrangarh Fort “, this formidable hilltop fort is the one of the most impressive in Rajasthan . A series of gates lead into the Fort like “Jayapol”, built by Maharaja Man Singh in 1806 and the “ Fatehpol” or “Victory Gate “, erected by Maharaja Ajit Singh to celebrate his victory over the Mughals. The main gate is the “Lahapol”, an iron gate besides which there are 15 hand prints which are the “Sati Marks” of Maharaja Man Singh’s widows who threw themselves upon his funeral pyre in 1843. Inside the fort, also visit the palaces MotiMahal or “Pearl Palace”, the SukhMahal or “Pleasure Palace” and the PhoolMahal or “Flower Palace”. Continue the tour to visit the “JaswantThada”, a marble cenotaph built in 1899 as a memorial to Maharaja Jaswant Singh II Return to the Hotel. Overnight at the Hotel
+
+
+
+
+<p><b>Day 9: 15th Jan - Jodhpur – Udaipur</b></p>
+
+Breakfast at the Hotel. After Breakfast proceed to Udaipur en-route visiting Ranakpur,( 260 KM/ 6 Hrs) Ranakpur. the famous Jain Temples dating back to the 15th century, which is located some 90 kms from Udaipur. Its 29 halls are supported by 1444 pillars, none of which are alike. The temple abounds with intricate friezes and sculptures. Arrive Udaipur. Check in at the Hotel. Evening at leisure (optional boat ride on lake Pichola on own) Pichola Lake is one of the most beautiful and picturesque lakes of Rajasthan, India. Located in the heart of the city, Pichola Lake is the oldest and one of the largest lakes of Udaipur. In 1362, the beautiful lake was built by PichhuBanjara during the ruling period of MaharanaLakha. Talking about the dimensions of Pichhola Lake, it is extended to 3 miles in length, 2 miles in width and has depth of 30 feet. Return to the Hotel. Overnight at the Hotel
+
+<p><b>Day 10: 16th Jan - in Udaipur</b></p>
+
+Breakfast at the hotel. In the morning excursion to Eklanji & Nagda, 22 kms from Udaipur. These temples are dedicated to Lord Shiva. The walled complex includes an elaborately pillared hall under a large pyramidal roof and features a four-faced Shiva image of black marble. Nagda, a complex of three temples, now in ruins, was the scene of frequent Muslim invasions. Return to the hotel Afternoon proceed for a sightseeing tour of Udaipur. Begin your tour with a visit to the City Palace. At this Palace complex, one will marvel at the rooms with mirrored walls and ivory doors, windows with coloured glass, inlaid marble balconies and the peacock courtyard. Also visit the lovely Sahelion-ki-bari gardens, the Jagdish temple and the local Museum. Return to the Hotel. Overnight at the Hotel
+
+<p><b>Day 11: 17th Jan - Udaipur – Delhi</b></p>
+
+Breakfast at the Hotel. After Breakfast transfer to the Airport . Depart Udaipur. Arrive Delhi & connect flight to overseas destination
+
+</div>
+
+<div id="Accommodation Details" class="tabcontent">
+  <h3>Accommodation Details</h3>
+  <table>
+  <tr>
+    <th>City </th>
+    <th>Deluxe</th>
+    
+  </tr>
+
+  <tr>
+    <td>Agra ,Uttar Pradesh ,India</td>
+    <td>Crystal Sarovar Premier or similar</td>
+    
+
+    </tr>
+
+    <tr>
+    <td>Bikaner ,Rajasthan ,India</td>
+    <td>Lalgah Palace or similar</td>
+    
+
+    </tr>
+    <tr>
+    <td>Jaipur ,Rajasthan ,India</td>
+    <td>Royal Orchid Central or similar</td>
+    
+
+    </tr>
+
+    <tr>
+    <td>Jodhpur ,Rajasthan ,India</td>
+    <td>Ranbanka or similar</td>
+    
+
+    </tr>
+    <tr>
+    <td>New Delhi ,Delhi ,India</td>
+    <td>Jaypee Vasant Continental or similar</td>
+    
+
+    </tr>
+
+    <tr>
+      <td>Udaipur ,Rajasthan ,India</td>
+      <td>Hotel Fateh Niwas or similar</td>
+      
+     </tr>
+</table>
+
+  </div>
+<div id="Price" class="tabcontent">
+  <h3>Price Per Person in Indian Rupees</h3>
+  <table>
+    <tr>
+      <th>Hotel</th>
+      <th>Start Date</th>
+      <th>End Date</th>
+      <th>Twin ( Min. 2 Adults )</th>
+      <th>Twin ( Min. 4 Adults )</th>
+      <th>Single</th>
+    </tr>
+
+    <tr>
+      <td>Deluxe</td>
+      <td>07 Jan 2019</td>
+      <td>17 Jan 2019</td>
+      <td>82460</td>
+      <td>67580</td>
+      <td>115320</td>
+    </tr>
+  </table>
+
+  </div>
+<div id="Inclusions & Exclusions" class="tabcontent">
+  <h3>Inclusions</h3>
+  <ul>
+  
+  <li>10 Nights’ accommodation on twin / double sharing basis in 4 star & Heritage  Hotels</li><br>
+  <li>Breakfast and Dinner Daily (As per itinerary)</li><br>
+  <li>All sightseeing, excursions as mentioned in the itinerary by air conditioned Vehicle</li><br>
+  <li>Government Service Taxes, Toll Taxes, City Taxes & Driver Allowances</li><br>
+  <li>Local English Speaking Guide (For respective destination during sightseeing, wherever applicable)</li><br>
+  <li>Entrance fees at monuments</li>
+<h3>Exclusions</h3>
+  
+  <li>Tips, drinks, laundry, telephone calls and all other items of a personal nature</li><br>
+  <li>Any International / Domestic Airfare</li><br>
+  <li>Train fare</li><br>
+  <li>Visa fees or any personal insurance</li><br>
+  <li>Porterage</li><br>
+  <li>Anything not included in above itinerary / Inclusions</li>
+</ul>
+  </div>
+<div id="Terms & Conditions" class="tabcontent">
+  <h3>Terms & Conditions</h3>
+  <ul>
+  <li>Meals on arrival and departure days is subject to flight timing</li>
+  <li>Supplementary cost will be applicable if the travel date is during national holidays, festivals, Long weekends and New Year</li>
+  <li>Rates are subject to change in case of   any changes in rate of exchange, Govt. taxes etc</li>
+  <li>In case of Hotel unavailability similar category hotel will be provided</li>
+  <li>Transportation not on disposable basis</li>
+  <li>No refund for any unused service or meals</li>
+  <li>Sakshi Travels reserves the right to change/modify the offer any time without any prior notice.</li>
+</ul>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>
+     
+</body>
+</html> 
