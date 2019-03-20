@@ -364,7 +364,7 @@ section
 }
 .logo div
 {
-	color: #FFFFFF;
+	color: red;
 	text-transform: uppercase;
 }
 .logo div:first-of-type
